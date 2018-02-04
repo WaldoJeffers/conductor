@@ -1,0 +1,27 @@
+{
+  "name": "conductor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Waldo Jeffers",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^22.1.4"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WaldoJeffers/conductor.git"
+  },
+  "keywords": [
+    "fp",
+    "async"
+  ],
+  "bugs": {
+    "url": "https://github.com/WaldoJeffers/conductor/issues"
+  },
+  "homepage": "https://github.com/WaldoJeffers/conductor#readme",
+  "description": ""
+}
