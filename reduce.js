@@ -1,20 +1,18 @@
-const type = require('./type')
-const get = require('./get')
 const isPromise = require('./isPromise')
+const entriesOf = require('./entries')
 
-const reduce = (reducer, seed, collection) => {
-  const isObject = type(collection) === 'object'
-  const iterable = isObject ? Object.keys(collection) : collection
-  let acc = seed
-  for (let item of iterable) {
-    item = isObject ? get(item, collection) : item
-    acc = isPromise(acc)
-      ? acc.then(result => reducer(result, item))
-      : reducer(acc, item)
-  }
-  return acc
-}
+const reduce = reducer => (acc, value, key, collection) =>
+  isPromise(acc)
+    ? acc.then(result => reducer(result, value, key, collection))
+    : reducer(acc, value, key, collection)
 
+const reduceAll = (reducer, seed, collection) =>
+  Array.isArray(collection)
+    ? collection.reduce(reduce(reducer))
+    : entriesOf(collection).reduce(
+      (acc, [key, value]) => reduce(reducer)(acc, value, key, collection),
+      seed
+    )
 // const reduceB = (reducer, seed, collection) =>
 //   (type(collection) === 'object' ? Object.keys(collection) : collection).reduce(
 //     (acc, item, key, iterable) =>
@@ -50,4 +48,4 @@ const reduce = (reducer, seed, collection) => {
 //   )
 // }
 
-module.exports = reduce
+module.exports = reduceAll

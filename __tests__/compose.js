@@ -1,6 +1,8 @@
 const compose = require('../compose')
 const delay = require('../delay')
+const curry = require('../curry')
 
+const add = (a, b) => a + b
 const double = x => 2 * x
 const add8 = x => x + 8
 const minus4 = x => x - 4
@@ -24,5 +26,9 @@ describe('compose', () => {
     await expect(
       compose(minus4, delay(100), add8, doubleAsync)(1)
     ).resolves.toBe(6)
+  })
+
+  it('should not break curryfication', () => {
+    expect(compose(minus4, add)(2)(5)).toBe(3)
   })
 })

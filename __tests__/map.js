@@ -1,14 +1,61 @@
-const map = require('../map')
+const mapSync = require('../map')
 const delay = require('../delay')
+const random = require('../random')
+const compose = require('../compose')
+const randomDelay = x => delay(random(10, 500))(x)
 
-describe('map', () => {
-  it('should map over a collection using a mapper', () => {
-    const collection = [3, 1, 4]
-    expect(map(x => 2 * x, collection)).toEqual([6, 2, 8])
+const mapper = x => 2 * x
+const asyncMapper = async x => mapper(x)
+const asyncMapperWithRandomDelay = compose(randomDelay, asyncMapper)
+
+const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const newArray = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+const map = new Map([['drumsticks', 2], ['cymbals', 3]])
+const newMap = new Map([['drumsticks', 4], ['cymbals', 6]])
+
+const object = { drumsticks: 2, cymbals: 3 }
+const newObject = { drumsticks: 4, cymbals: 6 }
+const set = new Set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+const newSet = new Set([0, 2, 4, 6, 8, 10, 12, 14, 16, 18])
+
+describe('mapSync', () => {
+  it('should map over an array using a mapper', () => {
+    expect(mapSync(mapper, array)).toEqual(newArray)
   })
 
-  it('should map over a collection using an async mapper', async () => {
-    const collection = [3, 1, 4]
-    await expect(map(delay(1000), collection)).resolves.toEqual([3, 1, 4])
+  it('should map over an object using the provided mapper', () => {
+    expect(mapSync(mapper, object)).toEqual(newObject)
+  })
+
+  it('should map over a map using the provided mapper', () => {
+    expect(mapSync(mapper, map)).toEqual(newMap)
+  })
+
+  it('should map over a map using the provided mapper', () => {
+    expect(mapSync(mapper, set)).toEqual(newSet)
+  })
+
+  it('should support partial application', () => {
+    expect(mapSync(mapper)(array)).toEqual(newArray)
+  })
+
+  it('should map over an array using an asynchronous mapper', async () => {
+    await expect(mapSync(asyncMapper, array)).resolves.toEqual(newArray)
+  })
+
+  it('should preserve order when using an asynchronous mapper', async () => {
+    await expect(mapSync(asyncMapperWithRandomDelay, array)).resolves.toEqual(
+      newArray
+    )
+    await expect(mapSync(asyncMapperWithRandomDelay, object)).resolves.toEqual(
+      newObject
+    )
+    await expect(mapSync(asyncMapperWithRandomDelay, map)).resolves.toEqual(
+      newMap
+    )
+    await expect(mapSync(asyncMapperWithRandomDelay, set)).resolves.toEqual(
+      newSet
+    )
   })
 })
