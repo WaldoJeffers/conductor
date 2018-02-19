@@ -7,6 +7,7 @@ const some = require('./some')
 const branch = require('./branch')
 const compose = require('./compose')
 const valueIterator = require('./valueIterator')
+const iterate = require('./iterate')
 
 // Use transduce ?
 const objectReducer = (acc, value, key) => {
@@ -53,6 +54,6 @@ const awaitAll = collection =>
     ? Promise.all(collection)
     : Promise.all(values(collection))
       .then(valueIterator)
-      .then(values => mapSync(() => values.next().value, collection))
+      .then(values => mapSync(iterate(values), collection))
 
 module.exports = curry(compose(branch(some(isPromise), awaitAll), mapSync))

@@ -1,6 +1,5 @@
 const compose = require('../compose')
 const delay = require('../delay')
-const curry = require('../curry')
 
 const add = (a, b) => a + b
 const double = x => 2 * x
