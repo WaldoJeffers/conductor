@@ -8,6 +8,7 @@ const branch = require('./branch')
 const compose = require('./compose')
 const valueIterator = require('./valueIterator')
 const iterate = require('./iterate')
+const mapTransformer = require('./transformers/map')
 
 // Use transduce ?
 const objectReducer = (acc, value, key) => {
@@ -24,9 +25,6 @@ const setReducer = (acc, value) => {
   acc.add(value)
   return acc
 }
-
-const mapTransformer = mapper => reducer => (acc, value, key, collection) =>
-  reducer(acc, mapper(value, key, collection), key, collection)
 
 const mapSync = (mapper, collection) => {
   switch (type(collection)) {

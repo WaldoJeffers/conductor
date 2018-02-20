@@ -25,8 +25,8 @@ const filter = (predicate, collection) =>
     iterate,
     valueIterator,
     map(predicate),
-    // retrieve values as an array, otherwise mapping will fail on sets
-    // (it will only contain 2 values, true & falses)
+    // retrieve values as an array, otherwise mapping predicates will fail on sets
+    // (it will only contain 2 values, true & false)
     values
   )(collection)
 

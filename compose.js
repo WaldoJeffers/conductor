@@ -1,11 +1,7 @@
-const isPromise = require('./isPromise')
 const curry = require('./curry')
+const then = require('./then')
 
-const compose = (f, g) =>
-  curry((...args) => {
-    const result = g(...args)
-    return isPromise(result) ? result.then(f) : f(result)
-  }, g.length)
+const compose = (f, g) => curry((...args) => then(f, g(...args)), g.length)
 
 const composeAll = (...fns) => fns.reduce(compose)
 
