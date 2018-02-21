@@ -1,6 +1,4 @@
 const curry = require('./curry')
-const type = require('./type')
-const reduceSync = require('./reduceSync')
 const isPromise = require('./isPromise')
 const values = require('./values')
 const some = require('./some')
@@ -9,43 +7,12 @@ const compose = require('./compose')
 const valueIterator = require('./valueIterator')
 const iterate = require('./iterate')
 const mapTransformer = require('./transformers/map')
+const dump = require('./dump')
 
-// Use transduce ?
-const objectReducer = (acc, value, key) => {
-  acc[key] = value
-  return acc
-}
-
-const mapReducer = (acc, value, key) => {
-  acc.set(key, value)
-  return acc
-}
-
-const setReducer = (acc, value) => {
-  acc.add(value)
-  return acc
-}
-
-const mapSync = (mapper, collection) => {
-  switch (type(collection)) {
-  case 'array':
-    return collection.map(mapper)
-  case 'object':
-    return reduceSync(mapTransformer(mapper)(objectReducer), {}, collection)
-  case 'map':
-    return reduceSync(
-      mapTransformer(mapper)(mapReducer),
-      new Map(),
-      collection
-    )
-  case 'set':
-    return reduceSync(
-      mapTransformer(mapper)(setReducer),
-      new Set(),
-      collection
-    )
-  }
-}
+const mapSync = (mapper, collection) =>
+  Array.isArray(collection)
+    ? collection.map(mapper)
+    : dump(mapTransformer(mapper), collection)
 
 const awaitAll = collection =>
   Array.isArray(collection)
