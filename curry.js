@@ -1,5 +1,5 @@
-const curry = (fn, length = fn.length) => (...args) =>
-  args.length >= length
+const curry = (fn, arity = fn.length) => (...args) =>
+  args.length >= arity
     ? fn(...args)
     : (...otherArgs) => curry(fn)(...args, ...otherArgs)
 
