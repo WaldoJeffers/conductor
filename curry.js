@@ -1,6 +1,5 @@
-const curry = (fn, arity = fn.length) => (...args) =>
-  args.length >= arity
-    ? fn(...args)
-    : (...otherArgs) => curry(fn)(...args, ...otherArgs)
+const curryN = require('./curryN')
+
+const curry = fn => curryN(fn.length, fn)
 
 module.exports = curry

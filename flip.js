@@ -1,5 +1,5 @@
-const curry = require('./curry')
+const curryN = require('./curryN')
 
-const flip = fn => curry((...args) => fn(...args.reverse()), fn.length)
+const flip = fn => curryN(fn.length, (...args) => fn(...args.reverse()))
 
 module.exports = flip

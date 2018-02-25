@@ -1,5 +1,5 @@
 const next = require('./next')
 
-const iterate = collection => () => next(collection)
+const iterate = iterable => () => next(iterable)
 
 module.exports = iterate

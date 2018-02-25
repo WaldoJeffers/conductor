@@ -3,7 +3,7 @@ const just = require('./just')
 const compose = require('./compose')
 const curry = require('./curry')
 const identity = require('./identity')
-const branch = require('./branch')
+const ifElse = require('./ifElse')
 const typeOf = require('./type')
 
 const getSeed = type => {
@@ -29,7 +29,7 @@ const filter = (predicate, collection) => {
   return compose(
     just(seed),
     map((value, key) =>
-      compose(branch(identity, () => reducer(value, key)), predicate)(
+      compose(ifElse(identity, () => reducer(value, key)), predicate)(
         value,
         key,
         collection
