@@ -1,5 +1,5 @@
 const map = require('./map')
-const just = require('./just')
+const always = require('./always')
 const compose = require('./compose')
 const curry = require('./curry')
 const identity = require('./identity')
@@ -27,7 +27,7 @@ const getSeed = type => {
 const filter = (predicate, collection) => {
   const { seed, reducer } = getSeed(typeOf(collection))
   return compose(
-    just(seed),
+    always(seed),
     map((value, key) =>
       compose(ifElse(identity, () => reducer(value, key)), predicate)(
         value,
