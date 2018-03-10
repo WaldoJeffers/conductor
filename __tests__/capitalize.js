@@ -1,7 +1,7 @@
-const capitalize = require('../capitalize')
+const capitalize = require('../src/capitalize')
 
 describe('capitalize', () => {
-  it('should capitalize the string\'s first letter', () => {
-    expect(capitalize('beat the devil\'s tatoo')).toBe('Beat the devil\'s tatoo')
-  })
+	it("should capitalize the string's first letter", () => {
+		expect(capitalize("beat the devil's tatoo")).toBe("Beat the devil's tatoo")
+	})
 })
