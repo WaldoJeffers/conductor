@@ -1,4 +1,4 @@
-const branch = require('../branch')
+const branch = require('../src/branch')
 
 const add5 = x => x + 5
 const times2 = x => 2 * x

@@ -1,4 +1,4 @@
-const capitalize = require('../capitalize')
+const capitalize = require('../src/capitalize')
 
 describe('capitalize', () => {
   it('should capitalize the string\'s first letter', () => {

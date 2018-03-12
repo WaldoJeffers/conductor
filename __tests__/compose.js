@@ -1,5 +1,5 @@
-const compose = require('../compose')
-const delay = require('../delay')
+const compose = require('../src/compose')
+const delay = require('../src/delay')
 
 const add = (a, b) => a + b
 const double = x => 2 * x

@@ -1,4 +1,4 @@
-const curry = require('../curry')
+const curry = require('../src/curry')
 
 const add = curry((a, b, c) => a + b + c)
 

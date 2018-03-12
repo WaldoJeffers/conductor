@@ -1,4 +1,4 @@
-const always = require('../always')
+const always = require('../src/always')
 
 describe('always', () => {
   it('should create a function which always returns the same value', () => {

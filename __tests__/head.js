@@ -1,4 +1,4 @@
-const head = require('../head')
+const head = require('../src/head')
 
 const object = {
   role: 'drummer',
