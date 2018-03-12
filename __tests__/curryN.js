@@ -1,4 +1,4 @@
-const curryN = require('../curryN')
+const curryN = require('../src/curryN')
 const add = curryN(3, (a, b, c) => a + b + c)
 
 describe('curry', () => {

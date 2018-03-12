@@ -1,4 +1,4 @@
-const flip = require('../flip')
+const flip = require('../src/flip')
 
 const minus = (a, b) => a - b
 

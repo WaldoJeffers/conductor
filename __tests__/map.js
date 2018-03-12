@@ -1,7 +1,7 @@
-const mapSync = require('../map')
-const delay = require('../delay')
-const random = require('../random')
-const compose = require('../compose')
+const mapSync = require('../src/map')
+const delay = require('../src/delay')
+const random = require('../src/random')
+const compose = require('../src/compose')
 const randomDelay = x => delay(random(10, 500))(x)
 
 const mapper = x => 2 * x

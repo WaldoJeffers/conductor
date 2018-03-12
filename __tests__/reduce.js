@@ -1,5 +1,5 @@
-const delay = require('../delay')
-const reduce = require('../reduce')
+const delay = require('../src/delay')
+const reduce = require('../src/reduce')
 
 const add = (a, b) => a + b
 const numbers = [3, 1, 4, 1, 5]

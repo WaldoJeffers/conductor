@@ -1,6 +1,6 @@
-const filter = require('../filter')
-const delay = require('../delay')
-const random = require('../random')
+const filter = require('../src/filter')
+const delay = require('../src/delay')
+const random = require('../src/random')
 
 const isEven = nb => nb % 2 === 0
 const isEvenAsync = nb => Promise.resolve(isEven(nb))
