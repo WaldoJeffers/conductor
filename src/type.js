@@ -1,7 +1,3 @@
-const type = value =>
-  Object.prototype.toString
-    .call(value)
-    .slice(8, -1)
-    .toLowerCase()
+const type = value => value.constructor.name.toLowerCase()
 
 module.exports = type
