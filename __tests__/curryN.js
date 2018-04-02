@@ -16,4 +16,11 @@ describe('curry', () => {
     expect(add(1)(2).length).toBe(1)
     expect(add(1)(2).length).toBe(1)
   })
+
+  it('should accept as many arguments as the provided arity', () => {
+    expect(curryN(3, (a, b) => a + b)(1, 2)).toBeInstanceOf(Function)
+    expect(curryN(3, (a, b) => a + b)(1, 2, 3)).toBe(3)
+    // eslint-disable-next-line no-unused-vars
+    expect(curryN(2, (a, b, c) => a + b + 3)(1, 2)).toBe(6)
+  })
 })
