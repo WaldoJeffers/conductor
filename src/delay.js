@@ -1,4 +1,6 @@
-const delay = duration => value =>
+const curry = require('./curry')
+
+const delay = (duration, value) =>
   new Promise(resolve => setTimeout(resolve, duration, value))
 
-module.exports = delay
+module.exports = curry(delay)
