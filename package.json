@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "jest"
   },
   "author": "Waldo Jeffers",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.11.0",
     "jest": "^22.1.4"
   },
   "dependencies": {},
