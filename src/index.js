@@ -9,6 +9,7 @@ const curry = require('./curry')
 const curryN = require('./curryN')
 const identity = require('./identity')
 const delay = require('./delay')
+const dump = require('./dump')
 
 module.exports = {
   always,
@@ -21,5 +22,6 @@ module.exports = {
   curry,
   curryN,
   delay,
+  dump,
   identity,
 }
