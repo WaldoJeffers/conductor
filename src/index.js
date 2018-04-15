@@ -7,10 +7,15 @@ const capitalize = require('./capitalize')
 const compose = require('./compose')
 const curry = require('./curry')
 const curryN = require('./curryN')
-const identity = require('./identity')
 const delay = require('./delay')
 const dump = require('./dump')
 const entries = require('./entries')
+const equal = require('./equal')
+const filter = require('./filter')
+const findIndex = require('./findIndex')
+const identity = require('./identity')
+const map = require('./map')
+const reduce = require('./reduce')
 
 module.exports = {
   always,
@@ -25,5 +30,10 @@ module.exports = {
   delay,
   dump,
   entries,
+  equal,
+  filter,
+  findIndex,
   identity,
+  map,
+  reduce,
 }
