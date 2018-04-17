@@ -1,6 +1,6 @@
 {
-  "name": "@waldojeffers/conductor",
-  "version": "1.0.0-rc2",
+  "name": "conductor",
+  "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -21,7 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/WaldoJeffers/conductor.git"
   },
-  "keywords": ["fp", "async"],
+  "keywords": [
+    "fp",
+    "async"
+  ],
   "bugs": {
     "url": "https://github.com/WaldoJeffers/conductor/issues"
   },
