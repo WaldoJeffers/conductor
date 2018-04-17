@@ -1,7 +1,7 @@
 # conductor
 
-[![Conductor on npmjs](https://img.shields.io/npm/v/@waldojeffers/conductor.svg?style=flat-square)](https://www.npmjs.com/package/@waldojeffers/conductor)
-[![Conductor download stats on npmjs](https://img.shields.io/npm/dw/@waldojeffers/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=%40waldojeffers%conductor)
+[![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor)
+[![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor)
 [![Codeship Status for WaldoJeffers/conductor](https://img.shields.io/codeship/da09eb70-22e7-0136-b547-4e8bca269d75.svg?style=flat-square)](https://app.codeship.com/projects/286044)
 [![codecov](https://img.shields.io/codecov/c/github/WaldoJeffers/conductor.svg?style=flat-square)](https://codecov.io/gh/WaldoJeffers/conductor)
 
@@ -12,7 +12,7 @@ It provides a set of utility functions which can be used both with _asynchronous
 ## installation
 
 ```
-npm install @waldojeffers/conductor
+npm install conductor
 ```
 
 ## documentation
