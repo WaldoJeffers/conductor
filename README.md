@@ -1,4 +1,5 @@
 ![conductor](https://user-images.githubusercontent.com/7644970/39099169-f5421300-4675-11e8-9b73-523f1d905adc.png)
+--
 
 [![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor)
 [![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor)
