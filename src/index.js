@@ -15,6 +15,7 @@ const filter = require('./filter')
 const findIndex = require('./findIndex')
 const flip = require('./flip')
 const forEach = require('./forEach')
+const get = require('./get')
 const identity = require('./identity')
 const map = require('./map')
 const reduce = require('./reduce')
@@ -37,6 +38,7 @@ module.exports = {
   findIndex,
   flip,
   forEach,
+  get,
   identity,
   map,
   reduce,
