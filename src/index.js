@@ -16,7 +16,9 @@ const findIndex = require('./findIndex')
 const flip = require('./flip')
 const forEach = require('./forEach')
 const get = require('./get')
+const head = require('./head')
 const identity = require('./identity')
+const ifElse = require('./ifElse')
 const map = require('./map')
 const reduce = require('./reduce')
 
@@ -39,7 +41,9 @@ module.exports = {
   flip,
   forEach,
   get,
+  head,
   identity,
+  ifElse,
   map,
   reduce,
 }
