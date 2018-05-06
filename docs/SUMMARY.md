@@ -32,3 +32,7 @@
 * [identity](../api-reference/identity.md)
 * [map](../api-reference/map.md)
 
+## Guides
+
+* [example use cases](../guides/example-use-cases.md)
+
