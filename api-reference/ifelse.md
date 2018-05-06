@@ -42,7 +42,7 @@ insertOnce('role', { role: 'drummer' }, 'guitarist') // { role: 'drummer' }
 
 We want to build a function which adds a property \(a key & a value\) to an object, but only if the property does not already exist on the object. 
 
-The `hasProp` function is our predicate, and will check if a property exists on an object.
-
-The `returnAsIs` is our `ifTrue` branch and will simply return th e object as -i.s.
+* The `hasProp` function is our predicate, and will check if a property exists on an object.
+* The `returnAsIs` is our `ifTrue` branch and will simply return the object as is.
+* `addProp` is our `ifFalse`
 
