@@ -44,5 +44,5 @@ We want to build a function which adds a property \(a key & a value\) to an obje
 
 The `hasProp` function is our predicate, and will check if a property exists on an object.
 
-The `returnAsIs` is our \`iftrue  
+The `returnAsIs` is our `ifTrue` branch and will simply return th e object as -i.s.
 
