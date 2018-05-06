@@ -42,7 +42,7 @@ const decodeToken = compose(
   ifElse(not, throwMissingJwt),
   stripBearer,
   get('authorization'),
-  ifElse(compose(not, has('authorization'), throwMissingHeader),
+  ifElse(compose(not, has('authorization')), throwMissingHeader),
   get('headers')
 )
 ```
