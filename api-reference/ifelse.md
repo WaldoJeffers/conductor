@@ -6,7 +6,7 @@
 
 Accepts a predicate function, an ifTrue & an ifFalse branch functions, and returns a function which will pass all the arguments it receives to the `ifTrue` branch function if the predicate evaluates to a truthy value, or to the `ifFalse` branch function.
 
-If the predicate is an _asynchronous_ function, the returned function will return a `Promise` , allowing to use `Promise.prototype.then` or the \``await` keyword to wait until it's resolved.
+If the predicate is an _asynchronous_ function, the returned function will return a `Promise` , allowing to use `Promise.prototype.then` or the `await` keyword to wait until it's resolved.
 
 ## examples
 
@@ -42,5 +42,7 @@ insertOnce('role', { role: 'drummer' }, 'guitarist') // { role: 'drummer' }
 
 We want to build a function which adds a property \(a key & a value\) to an object, but only if the property does not already exist on the object. 
 
-The `hasProp` function is our predicate ,,
+The `hasProp` function is our predicate, and will check if a property exists on an object.
+
+The `returnAsIs` is our \`iftrue  
 
