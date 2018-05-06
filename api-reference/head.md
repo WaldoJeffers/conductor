@@ -1,7 +1,3 @@
----
-description: Get a collection's first item
----
-
 # head
 
 **`head :: Collection collection -> Any value`**

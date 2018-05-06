@@ -1,7 +1,3 @@
----
-description: Filters a collection using a predicate
----
-
 # filter
 
 **`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`**

@@ -1,7 +1,3 @@
----
-description: Find the index of an item using a predicate
----
-
 # findIndex
 
 **`findIndex :: (Function predicate, Collection collection) -> Any index`**

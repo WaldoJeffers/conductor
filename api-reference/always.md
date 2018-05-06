@@ -1,7 +1,3 @@
----
-description: Always return the same value
----
-
 # always
 
 `always :: Any value -> () -> Any value`

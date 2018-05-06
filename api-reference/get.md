@@ -1,7 +1,3 @@
----
-description: Retrieve an item by its key
----
-
 # get
 
 **`get :: (Any key, Collection collection) -> Any value`**

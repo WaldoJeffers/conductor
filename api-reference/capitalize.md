@@ -1,7 +1,3 @@
----
-description: Capitalize a string's first letter
----
-
 # capitalize
 
 `capitalize :: String input -> String output`
