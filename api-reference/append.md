@@ -1,7 +1,3 @@
----
-description: 'append :: (Any item, Array array) -> Array [...array, item]'
----
-
 # append
 
 ## description

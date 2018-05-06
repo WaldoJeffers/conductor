@@ -1,7 +1,3 @@
----
-description: 'apply :: (Function fn, Array arguments) -> Any value'
----
-
 # apply
 
 ## description

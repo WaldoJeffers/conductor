@@ -1,7 +1,3 @@
----
-description: Returns a collection's entries
----
-
 # entries
 
 **`entries :: Collection collection -> Array entries`**

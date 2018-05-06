@@ -1,7 +1,3 @@
----
-description: Flip a function parameters' order
----
-
 # flip
 
 **`flip ::  Function f -> Function g`**
