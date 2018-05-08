@@ -31,6 +31,7 @@
 * [ifElse](../api-reference/ifelse.md)
 * [identity](../api-reference/identity.md)
 * [map](../api-reference/map.md)
+* [into](../api-reference/into.md)
 
 ## Guides
 

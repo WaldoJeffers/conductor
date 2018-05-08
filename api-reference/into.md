@@ -1,0 +1,12 @@
+---
+description: Transform a collection into another
+---
+
+# into
+
+**`into :: (Collection seed, Transformer transformer, Collection input) => Collection output`**
+
+## description
+
+Create a new collection from an input collection, using the provided transformer. This allows you to easily apply a transformation on a collection. `into` is a simplified version of reduce, as it will automatically use the correct reducer \(`Map.prototype.set`   , `Set.prototype.set`
+
