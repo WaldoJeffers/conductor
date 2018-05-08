@@ -10,7 +10,7 @@ const curryN = require('./curryN')
 const delay = require('./delay')
 const dump = require('./dump')
 const entries = require('./entries')
-const equal = require('./equal')
+const equals = require('./equals')
 const filter = require('./filter')
 const findIndex = require('./findIndex')
 const flip = require('./flip')
@@ -19,6 +19,7 @@ const get = require('./get')
 const head = require('./head')
 const identity = require('./identity')
 const ifElse = require('./ifElse')
+const into = require('./into')
 const map = require('./map')
 const reduce = require('./reduce')
 
@@ -35,7 +36,7 @@ module.exports = {
   delay,
   dump,
   entries,
-  equal,
+  equals,
   filter,
   findIndex,
   flip,
@@ -44,6 +45,7 @@ module.exports = {
   head,
   identity,
   ifElse,
+  into,
   map,
   reduce,
 }
