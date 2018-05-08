@@ -37,3 +37,19 @@ into([], map(double), input) // [2, 4]
 
 Here we transformed an input `Object` into an output `Array`, and doubled every value in it. Notice we imported map from conductor/transformers and not from conductor directly, because they are different functions. `into` requires `Transformer` functions, that is functions which accept a reducer and return a new reducer.
 
+
+
+#### using a more complex transformer
+
+```javascript
+import { into } from 'conductor'
+
+const input = { drummer: 1, drumsticks: 2 }
+const transformer = reducer => (acc, value)
+    => value % 2 === 0 ? reducer(acc, 2 * value) : acc
+
+into([], transformer, input) // [4]
+```
+
+Here our transformer function doubles every even value and discards every odd value. To double the value, we pass the updated value to the reducer alongside with the reducer. To discard it, we simply simply return the accumulator as is.
+
