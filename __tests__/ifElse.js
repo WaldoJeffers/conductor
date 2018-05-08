@@ -1,4 +1,5 @@
 const ifElse = require('../src/ifElse')
+const type = require('../src/type')
 
 describe('ifElse', () => {
   it('should evaluate the predicate and execute the first branch if the predicate is true', () => {
@@ -52,7 +53,7 @@ describe('ifElse', () => {
   })
 
   it('should return an asynchronous function if the predicate is asynchronous', () => {
-    expect(ifElse(async () => true)(2)).toBeInstanceOf(Promise)
+    expect(type(ifElse(async () => true)(2))).toBe('promise')
   })
 
   it('should work with an asynchronous function if the predicate is asynchronous', async () => {

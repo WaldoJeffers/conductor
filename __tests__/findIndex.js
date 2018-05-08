@@ -34,7 +34,7 @@ describe('findIndex', () => {
     expect(findIndex(({ id }) => id === 1, characterObj)).toBe('luke')
   })
 
-  it.skip('should work on objects', () => {
+  it.skip('should work on maps', () => {
     expect(findIndex(({ id }) => id === 1, characterObj)).toBe('luke')
   })
 })

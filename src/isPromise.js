@@ -1,3 +1,5 @@
-const isPromise = value => value instanceof Promise
+const type = require('./type')
+
+const isPromise = value => type(value) === 'promise'
 
 module.exports = isPromise
