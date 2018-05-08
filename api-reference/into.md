@@ -29,10 +29,7 @@ map(fn, collection)
 import { into } from 'conductor'
 import { map } from 'conductor/transformers'
 
-const input = { 
-    drummer: 1,
-    drumsticks: 2
-}
+const input = { drummer: 1, drumsticks: 2 }
 const double = x => 2 * x
 
 into([], map(double), input) // [2, 4]
