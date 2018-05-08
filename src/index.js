@@ -20,6 +20,7 @@ const head = require('./head')
 const identity = require('./identity')
 const ifElse = require('./ifElse')
 const into = require('./into')
+const isPromise = require('./isPromise')
 const map = require('./map')
 const reduce = require('./reduce')
 
@@ -46,6 +47,7 @@ module.exports = {
   identity,
   ifElse,
   into,
+  isPromise,
   map,
   reduce,
 }
