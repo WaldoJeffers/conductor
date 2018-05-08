@@ -8,7 +8,33 @@ description: Transform a collection into another
 
 ## description
 
-Create a new collection from an input collection, using the provided transformer. This allows you to easily apply a transformation on a collection. `into` is a simplified version of `reduce`, as it will automatically use the correct reducer \(`Map.prototype.set`   , `Set.prototype.set`, `Array.prototype.push`,  `Object.defineProperty`\).
+Create a new collection from an input collection, using the provided transformer. This allows you to easily apply a transformation on a collection. `into` is a simplified version of `reduce`, as it will automatically use the correct reducer \(`Map.prototype.set`   , `Set.prototype.set`, `Array.prototype.push`,  `Object.defineProperty`\). Because of this, one of the best use cases for `into` is ttr
 
 To allow greater control on the transformation, your transformer function needs to implement the `Transformer` specification. If your transformation is only a mapping between an input & an output value, you can simply use `map`.
+
+Basically, 
+
+```javascript
+map(fn, collection)
+=== into(getSeedFromInput(collection), mapTransformer(fn), collection)
+=== transduce(mapTransformer(fn), getReducerFromInput(collection), getSeedFromInput(collection), collection)
+=== reduce(mapTransformer(fn)(getReducerFromInput(collection)), getSeedFromInput(collection), collection)
+```
+
+## examples
+
+#### basic examples
+
+```javascript
+import { into } from 'conductor'
+import { map } from 'conductor/transformers'
+
+const input = { 
+    drummer: 1,
+    drumsticks: 2
+}
+const double = x => 2 * x
+
+into([], map(double), input) // [2, 4]
+```
 
