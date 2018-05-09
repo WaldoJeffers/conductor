@@ -21,6 +21,7 @@ const identity = require('./identity')
 const ifElse = require('./ifElse')
 const into = require('./into')
 const isPromise = require('./isPromise')
+const iterate = require('./iterate')
 const map = require('./map')
 const reduce = require('./reduce')
 
@@ -48,6 +49,7 @@ module.exports = {
   ifElse,
   into,
   isPromise,
+  iterate,
   map,
   reduce,
 }
