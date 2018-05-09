@@ -22,6 +22,7 @@ const ifElse = require('./ifElse')
 const into = require('./into')
 const isPromise = require('./isPromise')
 const iterate = require('./iterate')
+const keys = require('./keys')
 const map = require('./map')
 const reduce = require('./reduce')
 
@@ -50,6 +51,7 @@ module.exports = {
   into,
   isPromise,
   iterate,
+  keys,
   map,
   reduce,
 }
