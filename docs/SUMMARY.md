@@ -31,10 +31,11 @@
 * [ifElse](../api-reference/ifelse.md)
 * [identity](../api-reference/identity.md)
 * [into](../api-reference/into.md)
+* [isPromise](../api-reference/ispromise.md)
 * [map](../api-reference/map.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [isPromise](../guides/ispromise.md)
+* [iterate](../guides/iterate.md)
 
