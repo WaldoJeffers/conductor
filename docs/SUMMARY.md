@@ -37,4 +37,5 @@
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
+* [iterate](../guides/iterate.md)
 
