@@ -30,10 +30,11 @@
 * [head](../api-reference/head.md)
 * [ifElse](../api-reference/ifelse.md)
 * [identity](../api-reference/identity.md)
-* [map](../api-reference/map.md)
 * [into](../api-reference/into.md)
+* [map](../api-reference/map.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
+* [isPromise](../guides/ispromise.md)
 
