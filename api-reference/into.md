@@ -1,7 +1,3 @@
----
-description: Transform a collection into another
----
-
 # into
 
 **`into :: (Collection seed, Transformer transformer, Collection input) => Collection output`**

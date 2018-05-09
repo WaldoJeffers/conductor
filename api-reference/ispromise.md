@@ -1,7 +1,3 @@
----
-description: Checks if a value is a Promise
----
-
 # isPromise
 
 **`isPromise :: Any value => Boolean result`**
