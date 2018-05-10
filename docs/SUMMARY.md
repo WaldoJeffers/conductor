@@ -32,10 +32,11 @@
 * [identity](../api-reference/identity.md)
 * [into](../api-reference/into.md)
 * [isPromise](../api-reference/ispromise.md)
+* [iterate](../api-reference/iterate.md)
 * [map](../api-reference/map.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [iterate](../guides/iterate.md)
+* [keys](../guides/keys.md)
 
