@@ -39,6 +39,7 @@
 * [not](../api-reference/not.md)
 * [pluck](../api-reference/pluck.md)
 * [prepend](../api-reference/prepend.md)
+* [random](../api-reference/random.md)
 
 ## Guides
 
