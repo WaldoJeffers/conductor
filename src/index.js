@@ -29,6 +29,7 @@ const not = require('./not')
 const pluck = require('./pluck')
 const prepend = require('./prepend')
 const reduce = require('./reduce')
+const replace = require('./replace')
 
 module.exports = {
   always,
@@ -62,4 +63,5 @@ module.exports = {
   pluck,
   prepend,
   reduce,
+  replace,
 }
