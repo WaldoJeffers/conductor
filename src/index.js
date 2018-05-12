@@ -26,6 +26,8 @@ const keys = require('./keys')
 const map = require('./map')
 const next = require('./next')
 const not = require('./not')
+const pluck = require('./pluck')
+const prepend = require('./prepend')
 const reduce = require('./reduce')
 
 module.exports = {
@@ -57,5 +59,7 @@ module.exports = {
   map,
   next,
   not,
+  pluck,
+  prepend,
   reduce,
 }
