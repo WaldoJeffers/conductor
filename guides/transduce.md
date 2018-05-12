@@ -51,3 +51,13 @@ Of course, we could also use map and filter to perform this operation, like so
 compose(map(get('name')), filter(compose(equals('light'), get('side'))))(characters)
 ```
 
+But that would also mean the characters array would be iterated over _twice_, which seems a pity.
+
+Using transduce ensures the iteration is only done once, no matter how many transformations are done on each item.
+
+* **`concatNames`** is our reducing function, simply adding a name to our accumulator and returning it.
+* **`retrieveGoodGuysName`** is our transformer: it accepts a reducer and returns another one, but decorated with the actual transformation we want to perform
+* **`seed`** is simply an empty array
+
+During the transduce operation, `concatNames`** **is decorated by `retrieveGoodGuysName` and then our characters array is iterated on, and each item goes through the transforming operation before the reducer gets called. In the end, we get `['Luke', 'Han']`. Hooray!
+
