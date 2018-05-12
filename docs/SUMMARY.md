@@ -54,4 +54,5 @@
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
+* [upsert](../guides/upsert.md)
 
