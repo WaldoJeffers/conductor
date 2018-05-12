@@ -18,10 +18,7 @@ The reducer function should have the following type signature:
 * **`key`** is the key of the current item in the iteration
 * **`collection`** is the input collection being iterated on
 
-The transformer function should accept a reducer and return another reducer function, and have the following type signature
-
- `(Any accumulator, Any value, Any key, Collection collection) =>  
+The transformer function should accept a reducer and return another reducer function, and thus have the following type signature  
+`(Any accumulator, Any value, Any key, Collection collection) =>  
   (Any accumulator, Any value, Any key, Collection collection) => Any output`
-
-
 
