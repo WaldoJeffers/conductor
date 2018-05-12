@@ -1,7 +1,3 @@
----
-description: Iterate over an iterable at each call
----
-
 # iterate
 
 **`iterate :: Iterable => () => Any value`**

@@ -1,7 +1,3 @@
----
-description: Logical NOT operator
----
-
 # not
 
 **`not :: Any input => Boolean negation`**

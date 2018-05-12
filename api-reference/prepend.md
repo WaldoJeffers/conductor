@@ -1,7 +1,3 @@
----
-description: Add an item at the beginning of an array
----
-
 # prepend
 
 **`prepend :: (Any item, Array input) => Array output`**

@@ -4,7 +4,7 @@ description: Combine a collection's values
 
 # reduce
 
-**`reduce :: (Function reducer,  Any seed, Collection collection) => Any|Promise<Any> output`**
+`reduce :: (Function reducer, Any seed, Collection collection) => Any|Promise<Any> output`
 
 ## description
 
@@ -26,16 +26,14 @@ Contrary to [`Array.prototype.reduce`](https://developer.mozilla.org/en-US/docs/
 If the reducer is _asynchronous_, the result will be a `Promise`. Use `Promise.prototype.then` or the `await` keyword to retrieve its inner value.
 
 {% hint style="info" %}
-`reduce` processes its calls to the reducer in **series**, because each of this call requires an up-to-date version of the `accumulator`. 
+`reduce` processes its calls to the reducer in **series**, because each of this call requires an up-to-date version of the `accumulator`.
 
-If you find yourself in a situation where you want the calls to be made in **parallel**, you can compose map and reduce to achieve the desired result: `compose(reduce(syncReducer), map(asyncMapper))`. 
+If you find yourself in a situation where you want the calls to be made in **parallel**, you can compose map and reduce to achieve the desired result: `compose(reduce(syncReducer), map(asyncMapper))`.
 {% endhint %}
-
-
 
 ## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { reduce } from 'conductor'
@@ -57,7 +55,7 @@ Internally, sum will be called with the following parameters
 
 The final result is 8.
 
-#### reducing other data structures
+### reducing other data structures
 
 ```javascript
 import { reduce } from 'conductor'
@@ -71,7 +69,7 @@ reduce(concat, '', words) // 'Bonsoir, Elliot'
 
 `reduce` also works on `Objects`, `Sets` and `Maps`.
 
-#### using an asynchronous reducer
+### using an asynchronous reducer
 
 ```javascript
 import { reduce } from 'conductor'
@@ -88,13 +86,13 @@ const fetchCapacity = id =>
 const sumCapacity = (accumulator, starship) =>
   fetchCapacity(starship.id)
   .then(capacity => accumulator + capacity)
-  
+
 await reduce(sumCapacity, 0, starships) // 100220
 ```
 
 Let's say we have an array of starships, and want to know their total combined cargo capacity. Since the data is not locally available, we need to retrieve it from the [Star Wars API](https://swapi.co/api/starships/). Our `fetchCapacity` utility function will simply fetch a starship's data from its id and return its capacity. Since it needs to make an HTTP request, it's obviously _asynchronous_. Then, we can define `sumCapacity`, which will be our reducer, and whose task will be to fetch the current starship's capacity and add it to the accumulator. Because our reducer is _asynchronous_, we need to use the await keyword to wait until all the underlying Promises are resolved.
 
-#### optimizing the previous example
+### optimizing the previous example
 
 In our previous example, our reducer is asynchronous because we need to make an HTTP request to retrieve each starship's data. However, since our real reducing operation is simply an addition, which is a commutative operation, we could make the HTTP requests in parallel and add the capacities synchronously after all the remote data has been fetched.
 
@@ -111,7 +109,7 @@ const fetchCapacity = id =>
   .then(res => res.json())
   .then(starship => starship.cargo_capacity)
 const sumCapacity = (accumulator, value ) = accumulator + value
-  
+
 await compose(reduce(sumCapacity, 0), map(fetchCapacity))(starships) // 100220
 ```
 

@@ -1,7 +1,3 @@
----
-description: Flatten a collection of collections
----
-
 # pluck
 
 **`pluck :: (Any key, Collection<Collections> input) => Collection<Any> output`**

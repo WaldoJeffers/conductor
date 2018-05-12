@@ -1,7 +1,3 @@
----
-description: Get a random integer
----
-
 # random
 
 **`random :: (Number min, Number max) => Number int`**

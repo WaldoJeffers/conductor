@@ -1,7 +1,3 @@
----
-description: Return the next value of an iterator
----
-
 # next
 
 **`next :: Iterator iterator => Any value`**
