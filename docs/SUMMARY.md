@@ -49,6 +49,7 @@
 * [transformers](../api-reference/transformers/README.md)
   * [transformers/filter](../api-reference/transformers/transformers-filter.md)
   * [transformers/map](../api-reference/transformers/transformers-map.md)
+* [type](../api-reference/type.md)
 
 ## Guides
 
