@@ -41,6 +41,7 @@
 * [prepend](../api-reference/prepend.md)
 * [random](../api-reference/random.md)
 * [reduce](../api-reference/reduce.md)
+* [replace](../api-reference/replace.md)
 
 ## Guides
 

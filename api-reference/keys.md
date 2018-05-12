@@ -1,7 +1,3 @@
----
-description: Get the keys of a collection
----
-
 # keys
 
 **`keys :: Collection collection => Array values`**
