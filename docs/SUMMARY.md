@@ -42,6 +42,7 @@
 * [random](../api-reference/random.md)
 * [reduce](../api-reference/reduce.md)
 * [replace](../api-reference/replace.md)
+* [slice](../api-reference/slice.md)
 
 ## Guides
 
