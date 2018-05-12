@@ -24,6 +24,7 @@ const isPromise = require('./isPromise')
 const iterate = require('./iterate')
 const keys = require('./keys')
 const map = require('./map')
+const next = require('./next')
 const reduce = require('./reduce')
 
 module.exports = {
@@ -53,5 +54,6 @@ module.exports = {
   iterate,
   keys,
   map,
+  next,
   reduce,
 }
