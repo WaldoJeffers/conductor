@@ -1,5 +1,6 @@
-const then = require('./then')
+const curry = require('./curry')
 const entries = require('./entries')
+const then = require('./then')
 
 const reduce = reducer => (acc, value, key, collection) =>
   then(result => reducer(result, value, key, collection), acc)
@@ -12,4 +13,4 @@ const reduceAll = (reducer, seed, collection) =>
       seed
     )
 
-module.exports = reduceAll
+module.exports = curry(reduceAll)
