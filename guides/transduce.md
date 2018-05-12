@@ -22,7 +22,11 @@ The transformer function should accept a reducer and return another reducer func
 `(Any accumulator, Any value, Any key, Collection collection) =>  
   (Any accumulator, Any value, Any key, Collection collection) => Any output`
 
-## example
+{% hint style="info" %}
+`transduce` is basically equivalent to reduce with a separation of concerns between the transforming operation and the reducing one \(hence the name _trans-duce_\), favoring clarity and code reuse. Although it is very similar to reduce, it can be hard its concept and its usefulness. If you're not familiar with this concept, I highly suggest you read the excellent [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html) by Reginald “Raganwald” Braithwaite.
+{% endhint %}
+
+##  example
 
 ```javascript
 const characters = [
