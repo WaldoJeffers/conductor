@@ -32,6 +32,7 @@ const reduce = require('./reduce')
 const replace = require('./replace')
 const slice = require('./slice')
 const some = require('./some')
+const transduce = require('./transduce')
 
 module.exports = {
   always,
@@ -68,4 +69,5 @@ module.exports = {
   replace,
   slice,
   some,
+  transduce,
 }
