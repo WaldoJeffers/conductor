@@ -44,6 +44,7 @@
 * [replace](../api-reference/replace.md)
 * [slice](../api-reference/slice.md)
 * [some](../api-reference/some.md)
+* [toLowerCase](../api-reference/tolowercase.md)
 
 ## Guides
 
