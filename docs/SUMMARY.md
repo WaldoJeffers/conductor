@@ -35,10 +35,11 @@
 * [iterate](../api-reference/iterate.md)
 * [keys](../api-reference/keys.md)
 * [map](../api-reference/map.md)
-* [next](../next.md)
+* [next](../api-reference/next.md)
+* [not](../api-reference/not.md)
+* [pluck](../api-reference/pluck.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [not](../guides/not.md)
 
