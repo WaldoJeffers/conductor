@@ -32,10 +32,17 @@
 * [identity](../api-reference/identity.md)
 * [into](../api-reference/into.md)
 * [isPromise](../api-reference/ispromise.md)
+* [iterate](../api-reference/iterate.md)
+* [keys](../api-reference/keys.md)
 * [map](../api-reference/map.md)
+* [next](../api-reference/next.md)
+* [not](../api-reference/not.md)
+* [pluck](../api-reference/pluck.md)
+* [prepend](../api-reference/prepend.md)
+* [random](../api-reference/random.md)
+* [reduce](../api-reference/reduce.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [iterate](../guides/iterate.md)
 
