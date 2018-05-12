@@ -1,4 +1,4 @@
-const reduceSync = require('../src/reduceSync')
+const reduceSync = require('../src/reduce')
 
 const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 const object = {
