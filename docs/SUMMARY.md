@@ -38,6 +38,7 @@
 * [next](../api-reference/next.md)
 * [not](../api-reference/not.md)
 * [pluck](../api-reference/pluck.md)
+* [prepend](../api-reference/prepend.md)
 
 ## Guides
 
