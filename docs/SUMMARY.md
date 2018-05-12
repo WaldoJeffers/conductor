@@ -40,6 +40,7 @@
 * [pluck](../api-reference/pluck.md)
 * [prepend](../api-reference/prepend.md)
 * [random](../api-reference/random.md)
+* [reduce](../api-reference/reduce.md)
 
 ## Guides
 
