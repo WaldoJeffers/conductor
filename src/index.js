@@ -36,6 +36,7 @@ const toLowerCase = require('./toLowerCase')
 const transduce = require('./transduce')
 const type = require('./type')
 const upsert = require('./upsert')
+const values = require('./values')
 
 module.exports = {
   always,
@@ -76,4 +77,5 @@ module.exports = {
   transduce,
   type,
   upsert,
+  values,
 }
