@@ -33,6 +33,8 @@ Calling `transduce(transformer, reducer, seed, collection)` is equivalent to cal
 #### basic example
 
 ```javascript
+import { transduce } from 'conductor'
+
 const characters = [
   { name: 'Luke', side: 'light' },
   { name: 'Han', side: 'light' },
@@ -45,6 +47,7 @@ const concatNames = (acc, name) => {
 const retrieveGoodGuysName = reducer => (acc, character) =>
   character.side === 'light' ? reducer(acc, character.name) : acc
 const seed = []
+
 transduce(retrieveGoodGuysName, concatNames, seed, characters) // ['Luke', 'Han']
 ```
 
@@ -103,5 +106,30 @@ const isGood = compose(equals('light'), get('side'))
 const retrieveGoodGuysName = compose(filter(isGood), map(getName))
 ```
 
-The filtering operation, isGood, will be done using `transformers/filter` to check is f the 
+The filtering operation, `isGood`, will be done using `transformers/filter` to check if the item's side property is equal to light. The `mapping` operation, `getName`, will be done using `transformers/map` and simply consists of retrieving the name property.
+
+Notice how these 2 utility transformer functions are not imported directly from `conductor` but rather from `conductor/transformers`. Also, since transformers/filter and `transformers/map` are higher order functions, they compose in a counterintuitive fashion.
+
+Our full code is now:
+
+```javascript
+import { compose, equals, get, transduce } from 'conductor'
+import { filter, map } from 'conductor/transformers'
+
+const characters = [
+  { name: 'Luke', side: 'light' },
+  { name: 'Han', side: 'light' },
+  { name: 'Darth Vader', side: 'dark' },
+]
+const concatNames = (acc, name) => {
+  acc.push(name)
+  return acc
+}
+const getName = get('name')
+const isGood = compose(equals('light'), get('side'))
+const retrieveGoodGuysName = compose(filter(isGood), map(getName))
+const seed = []
+
+transduce(retrieveGoodGuysName, concatNames, seed, characters) // ['Luke', 'Han']
+```
 
