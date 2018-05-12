@@ -50,9 +50,10 @@
   * [transformers/filter](../api-reference/transformers/transformers-filter.md)
   * [transformers/map](../api-reference/transformers/transformers-map.md)
 * [type](../api-reference/type.md)
+* [upsert](../api-reference/upsert.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [upsert](../guides/upsert.md)
+* [values](../guides/values.md)
 
