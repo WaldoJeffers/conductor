@@ -1,6 +1,8 @@
 const type = require('../src/type')
 
 class Person {}
+const asyncFn = async () => {}
+const promiseFn = () => Promise.resolve()
 
 describe('type', () => {
   it('should return the input\'s type', () => {
@@ -14,5 +16,7 @@ describe('type', () => {
     expect(type(new Set())).toBe('set')
     expect(type(() => {})).toBe('function')
     expect(type(new Person())).toBe('person')
+    expect(type(asyncFn())).toBe('promise')
+    expect(type(promiseFn())).toBe('promise')
   })
 })
