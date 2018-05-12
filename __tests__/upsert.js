@@ -19,8 +19,10 @@ describe('upsert', () => {
 
   it('should be a pure function', () => {
     const input = [luke]
-    const output = upsert(({ id }) => id === 2, han, input)
+    const outputInserted = upsert(({ id }) => id === 2, han, input)
+    const outputUpdated = upsert(({ id }) => id === 1, han, input)
     expect(input).toEqual([luke])
-    expect(output).not.toBe(input)
+    expect(outputInserted).not.toBe(input)
+    expect(outputUpdated).not.toBe(input)
   })
 })
