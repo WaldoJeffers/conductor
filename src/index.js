@@ -31,6 +31,7 @@ const prepend = require('./prepend')
 const reduce = require('./reduce')
 const replace = require('./replace')
 const slice = require('./slice')
+const some = require('./some')
 
 module.exports = {
   always,
@@ -66,4 +67,5 @@ module.exports = {
   reduce,
   replace,
   slice,
+  some,
 }
