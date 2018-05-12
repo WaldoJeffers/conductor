@@ -46,9 +46,11 @@
 * [some](../api-reference/some.md)
 * [toLowerCase](../api-reference/tolowercase.md)
 * [transduce](../api-reference/transduce.md)
+* [transformers](../api-reference/transformers/README.md)
+  * [transformers/filter](../api-reference/transformers/transformers-filter.md)
+  * [transformers/map](../api-reference/transformers/transformers-map.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [transformers](../guides/transformers.md)
 
