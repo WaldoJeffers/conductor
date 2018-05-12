@@ -39,4 +39,5 @@
 
 * [example use cases](../guides/example-use-cases.md)
 * [keys](../guides/keys.md)
+* [next](../guides/next.md)
 
