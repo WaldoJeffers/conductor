@@ -45,9 +45,10 @@
 * [slice](../api-reference/slice.md)
 * [some](../api-reference/some.md)
 * [toLowerCase](../api-reference/tolowercase.md)
+* [transduce](../api-reference/transduce.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [transduce](../guides/transduce.md)
+* [transformers](../guides/transformers.md)
 
