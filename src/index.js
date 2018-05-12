@@ -25,6 +25,7 @@ const iterate = require('./iterate')
 const keys = require('./keys')
 const map = require('./map')
 const next = require('./next')
+const not = require('./not')
 const reduce = require('./reduce')
 
 module.exports = {
@@ -55,5 +56,6 @@ module.exports = {
   keys,
   map,
   next,
+  not,
   reduce,
 }
