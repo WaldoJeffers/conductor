@@ -42,7 +42,7 @@ That works! But this seems really bloated, and we should be able to write simple
 Let's try using `compose` from Ramda or Lodash:
 
 ```javascript
-import {compose} from 'ramda' // or 'lodash.compose'
+import { compose } from 'ramda' // or 'lodash.compose'
 
 const getFavoriteStarshipName = async compose(getStarshipName, fetchStarship, head, getStarships) // remember compose works right to left
 getFavoriteStarshipName(Luke) // Error
@@ -77,7 +77,7 @@ const printStarships = user => `${user.name} flies on ${getStarships(user).join(
 printStarships(Luke)// 'Luke flies on X-Wing, Millenium Falcon'
 ```
 
-This function is now broken because `getStarships` returns a `Promise`.
+This function would now be broken because `getStarships` returns a `Promise`.
 
 [Promises are _contagious_](https://books.google.com/books?id=G7rBCQAAQBAJ&pg=PA25&lpg=PA25&dq=javascript+promises+are+contagious&source=bl&ots=NjXvlDkgSS&sig=4otCu3qz4HlEHRZwuBnpBJt5cHY&hl=fr&sa=X&redir_esc=y#v=onepage&q=javascript%20promises%20are%20contagious&f=false=), in the sense that their asynchronous nature spreads to their surroundings whether you like it or not.
 
