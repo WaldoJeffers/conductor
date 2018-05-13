@@ -4,13 +4,17 @@ description: Logical NOT operator
 
 # not
 
-`not :: Any input => Boolean negation`
+```erlang
+not :: Any input => Boolean negation
+```
 
 ## description
 
 Returns the logical negation of the input value. It's the functional equivalent of the JavaScript not operator `!`. It can be very useful in a function composition chain, to avoid writing code like this:
 
-`compose(b => !b, some(...))`
+```javascript
+compose(b => !b, some(...))
+```
 
 As you can see from the type signature, it obviously accepts `Booleans` as input values, but also values of any types. Just beware of [how JavaScript coerces values to their Boolean equivalents](https://developer.mozilla.org/en-US/docs/Glossary/Truthy).
 
