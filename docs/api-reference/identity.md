@@ -5,7 +5,7 @@ description: Identity function
 # identity
 
 ```erlang
-identity :: Any input -> Any input
+identity :: Any input => Any input
 ```
 
 ## description
