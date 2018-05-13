@@ -4,7 +4,11 @@ description: Execute functions in parallel
 
 # branch
 
-`branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
+```erlang
+branch :: (Function f, Function g, Function h, ...)
+    => (a, b, c, ...)
+    => Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]
+```
 
 ## description
 
