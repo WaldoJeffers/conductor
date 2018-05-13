@@ -1,18 +1,25 @@
-# equal
+# equals
 
-````erlang
-equal :: (Any a, Any b) -> Boolean result
-```
+equals :: \(Any a, Any b\) -&gt; Boolean result
 
-## description
+```erlang
+equals :: (Any a, Any b) -> Boolean result
+```
+
+### description
 
 Checks if two items are equal.
 
-## example
+
+
+### example
 
 ```javascript
 import { equal } from 'conductor'
 
-equal(1, 1) // true
+equal(1, 1) // tru
 equal(1, 2) // false
-````
+```
+
+
+

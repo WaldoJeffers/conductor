@@ -1,6 +1,6 @@
 # identity
 
-```
+```text
 identity :: Any input -> Any input
 ```
 
@@ -15,3 +15,4 @@ import { identity } from 'conductor'
 
 identity('hello') // 'hello'
 ```
+

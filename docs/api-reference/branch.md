@@ -22,3 +22,4 @@ const sumAndMultiply = branch(sum, multiply)
 
 sumAndMultiply(numbers) // [9, 15]
 ```
+

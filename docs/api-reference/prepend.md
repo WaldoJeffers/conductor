@@ -18,3 +18,4 @@ import { prepend } from 'conductor'
 const numbers = [1, 4]
 prepend(3, numbers) // [3, 1, 4]
 ```
+

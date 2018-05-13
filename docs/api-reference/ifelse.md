@@ -1,6 +1,6 @@
 # ifElse
 
-```
+```text
 ifElse :: (Function predicate, Function ifTrue, Function, ifFalse) -> (a, b, ..., z) -> Any | Promise<Any> value
 ```
 
@@ -71,3 +71,4 @@ await ifElse(isEven, double, add1)(3) // 4
 ```
 
 Here our `isEven` predicate is an asynchronous function. If we call `ifElse` without waiting for the returned `Promise` to be resolved, we simply get the pending `Promise`. So we need to use the `await` keyword \(or `Promise.prototype.then`\) to wait for the `Promise` to be resolved.
+

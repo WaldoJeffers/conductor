@@ -4,7 +4,7 @@ description: Get the first item in a collection
 
 # head
 
-```
+```text
 head :: Collection collection -> Any value
 ```
 
@@ -35,3 +35,4 @@ head(map) // 2
 head(object) // 2
 head(set) // 'drumsticks'
 ```
+

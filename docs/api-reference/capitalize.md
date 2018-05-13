@@ -1,7 +1,3 @@
----
-description: Capitalize the input's first letter
----
-
 # capitalize
 
 ```erlang

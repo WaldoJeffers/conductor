@@ -41,3 +41,4 @@ const times3 = curryN(2, multiply)(3)
 
 times3(5) // 15
 ```
+

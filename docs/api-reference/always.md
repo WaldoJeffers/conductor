@@ -1,7 +1,3 @@
----
-description: Constant function
----
-
 # always
 
 ```erlang

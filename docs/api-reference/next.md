@@ -21,3 +21,4 @@ next(numbers) // 1
 next(numbers) // 4
 next(numbers) // undefined
 ```
+

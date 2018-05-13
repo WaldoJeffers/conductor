@@ -38,3 +38,4 @@ filter(predicate, characters) // ['Luke', 'Han']
 ```
 
 Let's say we have an array of characters, `characters`, and another one, `isGood`, which indicates if each character is indeed good. We need to filter the characters to keep only the good guys, so we need to iterate simultaneously over the two collections. Let's get an `Iterable` out of our `isGood` array. Then, let's call `iterate` on it. This will be our predicate function: each time it will be called by `filter` while iterating over our `characters` array, it will return the next value from `isGood`, indicating if the current character is one the good guys.
+

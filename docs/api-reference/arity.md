@@ -1,7 +1,3 @@
----
-description: Create a function of the desired arity
----
-
 # arity
 
 ```erlang

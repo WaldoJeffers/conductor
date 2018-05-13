@@ -18,3 +18,4 @@ import { isPromise } from 'conductor'
 isPromise(42) // false
 isPromise(Promise.resolve(42)) // true
 ```
+

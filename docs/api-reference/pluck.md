@@ -20,3 +20,4 @@ pluck('name', characters) // ['Luke', 'Han']
 ```
 
 Suppose we have a collection of `characters`, each having a `name` and an `id`. Here, we're only interested in retrieving their names, so we flatten the input collection by returning the `name` property of each character.
+

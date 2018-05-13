@@ -1,7 +1,3 @@
----
-description: Compose functions right to left
----
-
 # compose
 
 ```erlang
