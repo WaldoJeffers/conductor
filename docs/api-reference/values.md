@@ -1,5 +1,5 @@
 ---
-description: Get a collection's values
+description: Retrieve a collection's values as an array
 ---
 
 # values
