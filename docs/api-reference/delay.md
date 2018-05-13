@@ -1,6 +1,8 @@
 # delay
 
-`delay :: (Number duration, Any value) -> Promise.resolve(value)`
+```erlang
+delay :: (Number duration, Any value) => Promise<Any> output
+```
 
 ## description
 
