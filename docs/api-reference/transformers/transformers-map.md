@@ -4,7 +4,9 @@ description: Create a mapping transformer
 
 # transformers/map
 
-`transformers/map :: Function mapper => (Reducer input => Reducer output)`
+```erlang
+transformers/map :: Function mapper => (Reducer input => Reducer output)
+```
 
 ## description
 
