@@ -1,6 +1,10 @@
+---
+description: Identity function
+---
+
 # identity
 
-```text
+```erlang
 identity :: Any input -> Any input
 ```
 
