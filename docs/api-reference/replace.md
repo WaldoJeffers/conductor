@@ -1,5 +1,5 @@
 ---
-description: Replace an item in array
+description: Replace an item in an array
 ---
 
 # replace
