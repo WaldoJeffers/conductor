@@ -5,7 +5,6 @@ const getSeed = require('./internal/getSeed')
 const reduce = require('./reduce')
 const compose = require('./compose')
 const map = require('./map')
-const valueIterator = require('./valueIterator')
 const values = require('./values')
 const iterate = require('./iterate')
 const flip = require('./flip')
@@ -23,7 +22,6 @@ const filter = (predicate, collection) =>
   compose(
     flip(filterSync)(collection),
     iterate,
-    valueIterator,
     map(predicate),
     // retrieve values as an array, otherwise mapping predicates will fail on sets
     // (it will only contain 2 values, true & false)

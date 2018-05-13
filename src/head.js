@@ -1,7 +1,7 @@
-const valueIterator = require('./valueIterator')
-const next = require('./next')
+const get = require('./get')
 const compose = require('./compose')
+const values = require('./values')
 
-const head = compose(next, valueIterator)
+const head = compose(get(0), values)
 
 module.exports = head
