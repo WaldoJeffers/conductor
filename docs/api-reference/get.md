@@ -1,6 +1,12 @@
+---
+description: Get a collection's item by its key
+---
+
 # get
 
-`get :: (Any key, Collection collection) -> Any value`
+```erlang
+get :: (Any key, Collection collection) => Any value
+```
 
 ## description
 
@@ -28,7 +34,7 @@ import { get } from 'conductor'
 
 const set = new Set(['hello', 'world'])
 const object = { drumsticks: 2 }
-const map = new ([['drumsticks', 2]])
+const map = new Map([['drumsticks', 2]])
 get('world', set) // 'world'
 get('drumsticks', object) // 2
 get('drumsticks', map) // 2
