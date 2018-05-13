@@ -1,6 +1,12 @@
+---
+description: Capitalize the input's first letter
+---
+
 # capitalize
 
-`capitalize :: String input -> String output`
+```erlang
+capitalize :: String input -> String output
+```
 
 ## description
 
