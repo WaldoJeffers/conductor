@@ -1,3 +1,7 @@
+---
+description: Get a random integer
+---
+
 # random
 
 `random :: (Number min, Number max) => Number int`
@@ -13,4 +17,3 @@ import { random } from 'conductor'
 
 random(1, 10) // 7... well, maybe.
 ```
-

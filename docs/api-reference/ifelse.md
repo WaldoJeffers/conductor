@@ -1,6 +1,8 @@
 # ifElse
 
-`ifElse :: (Function predicate, Function ifTrue, Function, ifFalse) -> (a, b, ..., z) -> Any | Promise<Any> value`
+```
+ifElse :: (Function predicate, Function ifTrue, Function, ifFalse) -> (a, b, ..., z) -> Any | Promise<Any> value
+```
 
 ## description
 
@@ -30,11 +32,12 @@ Here, we want wrote a function that doubles an input value if it's even, or simp
 ```javascript
 import { ifElse } from 'conductor'
 
-const hasProp = (key, object) => Object.prototype.hasOwnProperty.call(object, key)
+const hasProp = (key, object) =>
+  Object.prototype.hasOwnProperty.call(object, key)
 const returnAsIs = (_, object) => object
 const addProp = (key, object, value) => {
-    object[key] = value
-    return object
+  object[key] = value
+  return object
 }
 const insertOnce = ifElse(hasProp, returnAsIs, addProp)
 
@@ -68,4 +71,3 @@ await ifElse(isEven, double, add1)(3) // 4
 ```
 
 Here our `isEven` predicate is an asynchronous function. If we call `ifElse` without waiting for the returned `Promise` to be resolved, we simply get the pending `Promise`. So we need to use the `await` keyword \(or `Promise.prototype.then`\) to wait for the `Promise` to be resolved.
-

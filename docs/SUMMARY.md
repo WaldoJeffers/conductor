@@ -21,7 +21,7 @@
 * [delay](api-reference/delay.md)
 * [dump](api-reference/dump.md)
 * [entries](api-reference/entries.md)
-* [equal](api-reference/equal.md)
+* [equals](api-reference/equals.md)
 * [filter](api-reference/filter.md)
 * [findIndex](api-reference/findindex.md)
 * [flip](api-reference/flip.md)
@@ -57,4 +57,3 @@
 ## Guides
 
 * [example use cases](guides/example-use-cases.md)
-

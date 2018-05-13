@@ -1,6 +1,12 @@
+---
+description: Filter a collection
+---
+
 # filter
 
-`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
+```erlang
+filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>
+```
 
 ## description
 
@@ -48,7 +54,7 @@ import { filter } from 'conductor'
 
 const object = { drummer: 1, drumsticks: 2 }
 const map = new Map([['drummer', 1], ['drumsticks', 2]])
-const set = new Set([0, 1, 2, 3]) 
+const set = new Set([0, 1, 2, 3])
 const isEven = x => x % 2 === 0
 filter(isEven, object) // { drumsticks: 2 }
 filter(isEven, map) // Map { 'drumsticks' => 2 }
@@ -76,4 +82,3 @@ await filter(double, values) // [0, 2]
 ```
 
 If your predicate function is _asynchronous_, you will need to use `await` \(or `Promise.prototype.then`\) because the result will be a `Promise`.
-

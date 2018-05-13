@@ -1,3 +1,7 @@
+---
+description: Execute functions in parallel
+---
+
 # branch
 
 `branch :: (Function f, Function g, Function h, ...) -> (a, b, c, ...) -> Array [f(a, b, c, ...), g(a, b, c, ...), h(a, b, c, ...), ...]`
@@ -11,11 +15,10 @@
 ```javascript
 import { branch } from 'conductor'
 
-const numbers = [1,3,5]
-const sum = (...args) => args.reduce((a,b) => a + b)
-const multiply = (...args) => args.reduce((a,b) => a * b)
+const numbers = [1, 3, 5]
+const sum = (...args) => args.reduce((a, b) => a + b)
+const multiply = (...args) => args.reduce((a, b) => a * b)
 const sumAndMultiply = branch(sum, multiply)
 
 sumAndMultiply(numbers) // [9, 15]
 ```
-

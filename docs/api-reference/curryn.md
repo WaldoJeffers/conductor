@@ -1,10 +1,12 @@
+---
+description: Curry a function using the provided arity
+---
+
 # curryN
 
 ```erlang
 curryN :: (Number arity, Function f) => Function g
 ```
-
-curryN :: \(Number arity, Function f\) =&gt; Function g
 
 ## description
 
@@ -30,13 +32,12 @@ times3(5) // 15
 ```javascript
 import { curryN } from 'conductor'
 
-function multiply(){
-    return arguments[0] * arguments[1]
+function multiply() {
+  return arguments[0] * arguments[1]
 }
 multiply.length // 0
-curryN(2, multiply).length // 2 
+curryN(2, multiply).length // 2
 const times3 = curryN(2, multiply)(3)
 
 times3(5) // 15
 ```
-

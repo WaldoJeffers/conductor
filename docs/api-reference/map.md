@@ -1,3 +1,7 @@
+---
+description: Map a collection to another one
+---
+
 # map
 
 `map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>`
@@ -26,4 +30,3 @@ await map(double, values) // [0, 4, 8]
 **Important**
 
 If you use an _asynchronous_ mapper, all `mapper` calls will be done in **parallel**, but the input collection's **order will be preserved**.
-

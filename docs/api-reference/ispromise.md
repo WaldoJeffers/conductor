@@ -1,3 +1,7 @@
+---
+description: Check if a value is a Promise
+---
+
 # isPromise
 
 `isPromise :: Any value => Boolean result`****
@@ -14,4 +18,3 @@ import { isPromise } from 'conductor'
 isPromise(42) // false
 isPromise(Promise.resolve(42)) // true
 ```
-

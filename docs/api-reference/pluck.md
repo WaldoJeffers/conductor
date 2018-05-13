@@ -1,3 +1,7 @@
+---
+description: Flatten a collection of collections
+---
+
 # pluck
 
 `pluck :: (Any key, Collection<Collections> input) => Collection<Any> output`
@@ -11,9 +15,8 @@ Returns a new flattened `Collection` from an input collection of collections. Th
 ```javascript
 import { pluck } from 'conductor'
 
-const characters = [{ id: 1, name: 'Luke'}, { id: 2, name: 'Han'}]
+const characters = [{ id: 1, name: 'Luke' }, { id: 2, name: 'Han' }]
 pluck('name', characters) // ['Luke', 'Han']
 ```
 
 Suppose we have a collection of `characters`, each having a `name` and an `id`. Here, we're only interested in retrieving their names, so we flatten the input collection by returning the `name` property of each character.
-

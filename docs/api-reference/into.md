@@ -1,6 +1,8 @@
 # into
 
-`into :: (Collection seed, Transformer transformer, Collection input) => Collection output`
+```erlang
+into :: (Collection seed, Transformer transformer, Collection input) => Collection output
+```
 
 ## description
 
@@ -11,10 +13,19 @@ To allow greater control on the transformation, your transformer function needs 
 Basically,
 
 ```javascript
-map(fn, collection)
-=== into(getSeedFromInput(collection), mapTransformer(fn), collection)
-=== transduce(mapTransformer(fn), getReducerFromInput(collection), getSeedFromInput(collection), collection)
-=== reduce(mapTransformer(fn)(getReducerFromInput(collection)), getSeedFromInput(collection), collection)
+;((map(fn, collection) ===
+  into(getSeedFromInput(collection), mapTransformer(fn), collection)) ===
+  transduce(
+    mapTransformer(fn),
+    getReducerFromInput(collection),
+    getSeedFromInput(collection),
+    collection
+  )) ===
+  reduce(
+    mapTransformer(fn)(getReducerFromInput(collection)),
+    getSeedFromInput(collection),
+    collection
+  )
 ```
 
 ## examples
@@ -46,4 +57,3 @@ into([], transformer, input) // [4]
 ```
 
 Here our transformer function doubles every even value and discards every odd value. To double the value, we pass the updated value to the reducer alongside with the reducer. To discard it, we simply simply return the accumulator as is.
-

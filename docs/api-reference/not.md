@@ -1,3 +1,7 @@
+---
+description: Logical NOT operator
+---
+
 # not
 
 `not :: Any input => Boolean negation`
@@ -31,4 +35,3 @@ const isValid = compose(not, searchIllegalCharacters)
 ```
 
 Suppose we want have a function which checks if an input string is valid. The input is considered valid if does not contain any illegal characters. The illegal characters are listed in a regular expression. Then, we use [`RegExp.prototype.test`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) to see if any of these characters is matched in the input string. Since our input is considered valid only if it `searchIllegalCharacters` returns false, we use the logical not operator to negate its result.
-

@@ -1,10 +1,12 @@
 # entries
 
-`entries :: Collection collection -> Array entries`
+````erlang
+entries :: Collection collection -> Array entries
+```
 
 ## description
 
-Returns a `Collection` \(`Array | Set | Object | Map`\)'s entries as bi-dimensional array of `[key, value]` pairs.
+Returns a `Collection` (`Array | Set | Object | Map`)'s entries as bi-dimensional array of `[key, value]` pairs.
 
 ## example
 
@@ -14,7 +16,7 @@ Returns a `Collection` \(`Array | Set | Object | Map`\)'s entries as bi-dimensio
 import { entries } from 'conductor'
 
 entries([3, 1, 4]) // [[0, 3], [1, 1], [2, 4]]
-```
+````
 
 ### set
 
@@ -33,7 +35,7 @@ For Sets, the key is equal to the value
 ```javascript
 import { entries } from 'conductor'
 
-entries({hello: 3, world: 1}) // [['hello', 3], ['world', 1]]
+entries({ hello: 3, world: 1 }) // [['hello', 3], ['world', 1]]
 ```
 
 ### map
@@ -43,4 +45,3 @@ import { entries } from 'conductor'
 
 entries(new Map([['hello', 3], ['world', 1]])) // [['hello', 3], ['world', 1]]
 ```
-

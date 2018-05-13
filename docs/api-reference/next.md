@@ -1,3 +1,7 @@
+---
+description: Get the next value of an iterator
+---
+
 # next
 
 `next :: Iterator iterator => Any value`
@@ -17,4 +21,3 @@ next(numbers) // 1
 next(numbers) // 4
 next(numbers) // undefined
 ```
-
