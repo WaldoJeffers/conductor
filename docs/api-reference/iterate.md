@@ -4,8 +4,6 @@ description: Get an iterator
 
 # iterate
 
-`iterate :: Iterable => () => Any value`
-
 ```erlang
 iterate :: Iterable => () => Any value
 ```
