@@ -18,7 +18,7 @@ Like all functions in **conductor**, `upsert` is a pure function and will not mo
 
 ## example
 
-#### inserting a new value
+### inserting a new value
 
 ```javascript
 import { upsert } from 'conductor'
@@ -30,7 +30,7 @@ const hasHan = character => character.id === 2
 upsert(hasHan, han, characters) // [{ id: 1, name: 'Luke' }, { id: 2, name: 'Han' }]
 ```
 
-#### updating a value
+### updating a value
 
 ```javascript
 import { upsert } from 'conductor'

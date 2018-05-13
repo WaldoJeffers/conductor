@@ -1,6 +1,6 @@
 # entries
 
-**`entries :: Collection collection -> Array entries`**
+`entries :: Collection collection -> Array entries`
 
 ## description
 
@@ -8,7 +8,7 @@ Returns a `Collection` \(`Array | Set | Object | Map`\)'s entries as bi-dimensio
 
 ## example
 
-#### array
+### array
 
 ```javascript
 import { entries } from 'conductor'
@@ -16,7 +16,7 @@ import { entries } from 'conductor'
 entries([3, 1, 4]) // [[0, 3], [1, 1], [2, 4]]
 ```
 
-#### set
+### set
 
 ```javascript
 import { entries } from 'conductor'
@@ -28,7 +28,7 @@ entries(new Set([3, 1, 4])) // [[3, 3], [1, 1], [4, 4]]
 For Sets, the key is equal to the value
 {% endhint %}
 
-#### object
+### object
 
 ```javascript
 import { entries } from 'conductor'
@@ -36,7 +36,7 @@ import { entries } from 'conductor'
 entries({hello: 3, world: 1}) // [['hello', 3], ['world', 1]]
 ```
 
-#### map
+### map
 
 ```javascript
 import { entries } from 'conductor'

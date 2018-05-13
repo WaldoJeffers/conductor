@@ -1,6 +1,6 @@
 # keys
 
-**`keys :: Collection collection => Array values`**
+`keys :: Collection collection => Array values`
 
 ## description
 

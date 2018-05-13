@@ -1,6 +1,6 @@
 # map
 
-**`map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>`**
+`map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>`
 
 ## description
 

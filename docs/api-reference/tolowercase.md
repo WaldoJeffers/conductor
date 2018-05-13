@@ -4,7 +4,7 @@ description: Convert a string to lowercase
 
 # toLowerCase
 
-**`toLowerCase :: String input => String output`**
+`toLowerCase :: String input => String output`
 
 ## description
 

@@ -1,6 +1,6 @@
 # not
 
-**`not :: Any input => Boolean negation`**
+`not :: Any input => Boolean negation`
 
 ## description
 
@@ -12,7 +12,7 @@ As you can see from the type signature, it obviously accepts `Booleans` as input
 
 ## examples
 
-#### basic example
+### basic example
 
 ```javascript
 import { not } from 'conductor'
@@ -20,7 +20,7 @@ import { not } from 'conductor'
 not(true) // false
 ```
 
-#### usage in a function composition
+### usage in a function composition
 
 ```javascript
 import { compose, not } from 'conductor'

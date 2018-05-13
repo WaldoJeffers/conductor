@@ -1,6 +1,6 @@
 # pluck
 
-**`pluck :: (Any key, Collection<Collections> input) => Collection<Any> output`**
+`pluck :: (Any key, Collection<Collections> input) => Collection<Any> output`
 
 ## description
 

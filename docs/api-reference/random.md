@@ -1,6 +1,6 @@
 # random
 
-**`random :: (Number min, Number max) => Number int`**
+`random :: (Number min, Number max) => Number int`
 
 ## description
 

@@ -1,14 +1,14 @@
 # into
 
-**`into :: (Collection seed, Transformer transformer, Collection input) => Collection output`**
+`into :: (Collection seed, Transformer transformer, Collection input) => Collection output`
 
 ## description
 
-Create a new collection from an input collection, using the provided transformer. This allows you to easily apply a transformation on a collection. `into` is a simplified version of `reduce`, as it will automatically use the correct reducer \(`Map.prototype.set`   , `Set.prototype.set`, `Array.prototype.push`,  `Object.defineProperty`\). Because of this, one of the best use cases for `into` is **transforming a collection into a new one of a different type** \(eg. an `Object` to an `Array`\).
+Create a new collection from an input collection, using the provided transformer. This allows you to easily apply a transformation on a collection. `into` is a simplified version of `reduce`, as it will automatically use the correct reducer \(`Map.prototype.set` , `Set.prototype.set`, `Array.prototype.push`, `Object.defineProperty`\). Because of this, one of the best use cases for `into` is **transforming a collection into a new one of a different type** \(eg. an `Object` to an `Array`\).
 
 To allow greater control on the transformation, your transformer function needs to implement the `Transformer` specification. If your transformation is only a mapping between an input & an output value, you can simply use `map`.
 
-Basically, 
+Basically,
 
 ```javascript
 map(fn, collection)
@@ -19,7 +19,7 @@ map(fn, collection)
 
 ## examples
 
-#### basic examples
+### basic examples
 
 ```javascript
 import { into } from 'conductor'
@@ -33,9 +33,7 @@ into([], map(double), input) // [2, 4]
 
 Here we transformed an input `Object` into an output `Array`, and doubled every value in it. Notice we imported map from conductor/transformers and not from conductor directly, because they are different functions. `into` requires `Transformer` functions, that is functions which accept a reducer and return a new reducer.
 
-
-
-#### using a more complex transformer
+### using a more complex transformer
 
 ```javascript
 import { into } from 'conductor'

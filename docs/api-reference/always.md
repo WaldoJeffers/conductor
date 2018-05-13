@@ -1,6 +1,12 @@
+---
+description: Constant function
+---
+
 # always
 
-`always :: Any value -> () -> Any value`
+```erlang
+always :: Any value -> () -> Any value
+```
 
 ## description
 

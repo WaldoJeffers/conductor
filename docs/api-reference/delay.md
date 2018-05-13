@@ -1,6 +1,6 @@
 # delay
 
-**`delay :: (Number duration, Any value) -> Promise.resolve(value)`**
+`delay :: (Number duration, Any value) -> Promise.resolve(value)`
 
 ## description
 

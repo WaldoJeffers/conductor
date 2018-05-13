@@ -4,23 +4,23 @@ description: Reduces a collection using a transformer and a reducer
 
 # transduce
 
-**`transduce :: (Function transformer, Function reducer, Any seed, Collection collection) => Any output`**
+`transduce :: (Function transformer, Function reducer, Any seed, Collection collection) => Any output`
 
 ## description
 
-Returns an `output` value after reducing an input `collection` using the provided `transformer` and `reducer`. 
+Returns an `output` value after reducing an input `collection` using the provided `transformer` and `reducer`.
 
 The reducer function should have the following type signature:  
- `(Any accumulator, Any value, Any key, Collection collection) => Any output`, where:
+`(Any accumulator, Any value, Any key, Collection collection) => Any output`, where:
 
-* **`accumulator`** is the result of the previous `reduce` iterations
-* **`value`** is the value of the current item in the iteration
-* **`key`** is the key of the current item in the iteration
-* **`collection`** is the input collection being iterated on
+* `accumulator` is the result of the previous `reduce` iterations
+* `value` is the value of the current item in the iteration
+* `key` is the key of the current item in the iteration
+* `collection` is the input collection being iterated on
 
 The transformer function should accept a reducer and return another reducer function, and thus have the following type signature  
-`(Any accumulator, Any value, Any key, Collection collection) =>  
-  (Any accumulator, Any value, Any key, Collection collection) => Any output`
+`(Any accumulator, Any value, Any key, Collection collection) =>    
+(Any accumulator, Any value, Any key, Collection collection) => Any output`
 
 Calling `transduce(transformer, reducer, seed, collection)` is equivalent to calling `reduce(transformer(reducer), seed, collection)`.
 
@@ -28,9 +28,9 @@ Calling `transduce(transformer, reducer, seed, collection)` is equivalent to cal
 `transduce` is basically equivalent to `reduce` with a separation of concerns between the transforming operation and the reducing one \(hence the name _trans-duce_\), favoring clarity and code reuse. Although it is very similar to reduce, it can be hard to grasp how it works and its usefulness. If you're not familiar with this concept, I highly suggest you read the excellent article [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html) by Reginald _Raganwald_ Braithwaite.
 {% endhint %}
 
-##  example
+## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { transduce } from 'conductor'
@@ -66,13 +66,13 @@ But that would also mean the `characters` array would be iterated over _twice_, 
 
 Using `transduce` ensures the iteration is only done once, no matter how many transformations are done on each item.
 
-* **`concatNames`** is our reducer, simply adding a name to our array accumulator and returning it.
-* **`retrieveGoodGuysName`** is our transformer: it accepts a reducer and returns another one, but decorated with the actual transformation we want to perform
-* **`seed`** is simply an empty array
+* `concatNames` is our reducer, simply adding a name to our array accumulator and returning it.
+* `retrieveGoodGuysName` is our transformer: it accepts a reducer and returns another one, but decorated with the actual transformation we want to perform
+* `seed` is simply an empty array
 
 During the transduce operation, `concatNames`** **is decorated by `retrieveGoodGuysName` and then our characters array is iterated on, and each item goes through the transforming operation before the reducer gets called. In the end, we get `['Luke', 'Han']`. Hooray!
 
-#### optimizing the previous example with utility transformers
+### optimizing the previous example with utility transformers
 
 Let's get back to our previous example, and especially this part where I said
 
@@ -95,7 +95,7 @@ So conductor also features two utility transformer functions, which can be very 
 
 **You can write **_**any**_** data transformation as a combination of those two functions. **Let's get back at our example.
 
-Let's re-define our `retrieveGoodGuysName` as a combination of `filter` and `map`: 
+Let's re-define our `retrieveGoodGuysName` as a combination of `filter` and `map`:
 
 ```javascript
 import { compose, equals, get } from 'conductor'

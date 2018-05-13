@@ -4,7 +4,7 @@ description: Create a filtering transformer
 
 # transformers/filter
 
-**`transformers/filter :: Function predicate => (Reducer input => Reducer output)`**
+`transformers/filter :: Function predicate => (Reducer input => Reducer output)`
 
 ## description
 
@@ -12,7 +12,7 @@ Returns a _filtering_ `Transformer`, which will filter items using the provided 
 
 ## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { filter, transduce } from 'conductor/transformers'

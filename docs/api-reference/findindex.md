@@ -1,6 +1,6 @@
 # findIndex
 
-**`findIndex :: (Function predicate, Collection collection) -> Any index`**
+`findIndex :: (Function predicate, Collection collection) -> Any index`
 
 ## description
 
@@ -18,7 +18,7 @@ The predicate function can be _asynchronous_, which will turn the result into a 
 
 ## examples
 
-#### basic example
+### basic example
 
 ```javascript
 import { findIndex } from 'conductor'
@@ -28,7 +28,7 @@ const predicate = word => word === 'world'
 findIndex(predicate, words) // 1
 ```
 
-#### searching in other data structures
+### searching in other data structures
 
 ```javascript
 import { findIndex } from 'conductor'
@@ -43,9 +43,9 @@ findIndex(predicate, translator) // 'mundo'
 findIndex(predicate, otherTranslator) // 'monde'
 ```
 
-We're using `findIndex` on data structures which are not arrays, and we are still looking for the index of the word `'world'`. Here, `words` is a `Set`, so the associated index is equal to the value, which is `world`.   `translator` is an `Object`, and the key associated to the `'world'` is the string `'mundo'`. `otherTranslator` is a `Set`, translating French to English, and the key associated to `'world'` is `'monde'`.
+We're using `findIndex` on data structures which are not arrays, and we are still looking for the index of the word `'world'`. Here, `words` is a `Set`, so the associated index is equal to the value, which is `world`. `translator` is an `Object`, and the key associated to the `'world'` is the string `'mundo'`. `otherTranslator` is a `Set`, translating French to English, and the key associated to `'world'` is `'monde'`.
 
-#### using an asynchronous predicate
+### using an asynchronous predicate
 
 ```javascript
 import { findIndex } from 'conductor'
@@ -56,5 +56,5 @@ const predicate = id => getCharacter(id).then(character => character.name === 'R
 await findIndex(predicate, character_ids) // 1
 ```
 
-Here, we have an asynchronous predicate which takes a character\_id and checks if the character is R2-D2,  using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
+Here, we have an asynchronous predicate which takes a character\_id and checks if the character is R2-D2, using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
 

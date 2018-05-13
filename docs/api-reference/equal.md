@@ -1,12 +1,10 @@
 # equal
 
-**`equal :: (Any a, Any b) -> Boolean result`**
+`equal :: (Any a, Any b) -> Boolean result`
 
 ## description
 
 Checks if two items are equal.
-
-
 
 ## example
 

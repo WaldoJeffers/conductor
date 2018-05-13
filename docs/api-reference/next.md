@@ -1,6 +1,6 @@
 # next
 
-**`next :: Iterator iterator => Any value`**
+`next :: Iterator iterator => Any value`
 
 ## description
 

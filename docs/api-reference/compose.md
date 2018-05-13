@@ -1,6 +1,6 @@
 # compose
 
-**`compose :: (Function f, Function g, ...) -> Function f ∘ g ∘ ...`**
+`compose :: (Function f, Function g, ...) -> Function f ∘ g ∘ ...`
 
 ## description
 

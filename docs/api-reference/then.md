@@ -18,10 +18,10 @@ If your value is a `Promise`, then's result will also be a `Promise`, so you'll 
 
 ## example
 
-#### synchronous example
+### synchronous example
 
 ```javascript
-import { then } from 'conductor'
+import { then } from 'conductor'
 
 const double = x => 2 * x
 then(double, 2) // 4
@@ -29,7 +29,7 @@ then(double, 2) // 4
 
 Here, our input value \(`2`\) is not a `Promise`, so this code is equivalent to double\(2\).
 
-#### asynchronous example
+### asynchronous example
 
 ```javascript
 import { then } from 'conductor'

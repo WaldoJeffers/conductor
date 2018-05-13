@@ -1,6 +1,6 @@
 # filter
 
-**`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`**
+`filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>`
 
 ## description
 
@@ -29,7 +29,7 @@ If you use an _asynchronous_ predicate function, all calls to the `predicate` fu
 
 ## examples
 
-#### basic example
+### basic example
 
 ```javascript
 import { filter } from 'conductor'
@@ -41,7 +41,7 @@ filter(isEven, values) // [0, 2]
 
 Here, we are just using filtering on an array to keep only even values. The predicate function is synchronous.
 
-#### other data structures
+### other data structures
 
 ```javascript
 import { filter } from 'conductor'
@@ -55,7 +55,7 @@ filter(isEven, map) // Map { 'drumsticks' => 2 }
 filter(isEven, set) // Set { 0, 2 }
 ```
 
-#### using the index in the predicate function
+### using the index in the predicate function
 
 ```javascript
 import { filter } from 'conductor'
@@ -65,7 +65,7 @@ const isEven = x => x % 2 === 0
 filter((_, index) => isEven(index), words) // ['hello', 'world']
 ```
 
-#### using an asynchronous predicate
+### using an asynchronous predicate
 
 ```javascript
 import { filter } from 'conductor'

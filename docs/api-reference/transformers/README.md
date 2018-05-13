@@ -28,5 +28,3 @@ transformer :: Reducer input => Reducer output
 transducer :: (Transformer transformer, Reducer reducer, Any seed, Collection collection) => Any value
 ```
 
-
-

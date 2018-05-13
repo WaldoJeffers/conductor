@@ -4,7 +4,7 @@ description: Check if at least one item in a collection satisfies a predicate
 
 # some
 
-**`some :: (Function predicate, Collection collection) => Boolean|Promise<Boolean> output`**
+`some :: (Function predicate, Collection collection) => Boolean|Promise<Boolean> output`
 
 ## description
 
@@ -16,7 +16,7 @@ Like all functions in **conductor**, this function is automatically is curried. 
 
 ## examples
 
-#### basic example
+### basic example
 
 ```javascript
 import { some } from 'conductor'
@@ -29,7 +29,7 @@ some(isEven, numbers) // true
 
 Here, we simply check if at least one item in our numbers array is an even number. Luckily, that's the case.
 
-#### using other data structures
+### using other data structures
 
 ```javascript
 import { some } from 'conductor'
@@ -46,7 +46,7 @@ some(isEven, map) // true
 
 `some` also works on `Objects`, `Sets`, and `Maps`.
 
-#### using an asynchronous predicate
+### using an asynchronous predicate
 
 ```javascript
 import { some } from 'conductor'

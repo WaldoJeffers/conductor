@@ -162,10 +162,6 @@ const getDecodedToken = compose(
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
-
-
-
 {% code-tabs %}
 {% code-tabs-item title="decodeToken.js" %}
 ```javascript

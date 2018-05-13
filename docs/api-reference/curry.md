@@ -1,6 +1,6 @@
 # curry
 
-**`curry :: Function f -> Function g`**
+`curry :: Function f -> Function g`
 
 ## description
 

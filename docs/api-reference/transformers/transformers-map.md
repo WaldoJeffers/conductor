@@ -4,7 +4,7 @@ description: Create a mapping transformer
 
 # transformers/map
 
-**`transformers/map :: Function mapper => (Reducer input => Reducer output)`**
+`transformers/map :: Function mapper => (Reducer input => Reducer output)`
 
 ## description
 
@@ -12,7 +12,7 @@ Returns a _mapping_ `Transformer`, which will map an item to another, exactly li
 
 ## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { map, transduce } from 'conductor/transformers'

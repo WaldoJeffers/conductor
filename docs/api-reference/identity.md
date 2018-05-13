@@ -1,6 +1,6 @@
 # identity
 
-**`identity :: Any input -> Any input`**
+`identity :: Any input -> Any input`
 
 ## description
 

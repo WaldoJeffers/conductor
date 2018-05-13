@@ -1,6 +1,6 @@
 # head
 
-**`head :: Collection collection -> Any value`**
+`head :: Collection collection -> Any value`
 
 ## description
 
@@ -8,7 +8,7 @@ Returns the first item in a `Collection`.
 
 ## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { head } from 'conductor'
@@ -17,7 +17,7 @@ const items = ['hello', 'world']
 head(items) // 'hello'
 ```
 
-#### using other data structures
+### using other data structures
 
 ```javascript
 import { head } from 'conductor'

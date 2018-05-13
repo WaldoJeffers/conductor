@@ -1,6 +1,6 @@
 # iterate
 
-**`iterate :: Iterable => () => Any value`**
+`iterate :: Iterable => () => Any value`
 
 ## description
 
@@ -8,7 +8,7 @@ Returns a function which iterate over an [`Iterable`](https://developer.mozilla.
 
 ## example
 
-#### basic example
+### basic example
 
 ```javascript
 import { iterate } from 'conductor'
@@ -20,7 +20,7 @@ iterate(iterator)() // 2
 
 Here, we simply get an `Iterable` from an array by calling its `values` method. Then, we execute iterate and call its result. It returns the array's first value.
 
-#### iterating simultaneously over two collections
+### iterating simultaneously over two collections
 
 ```javascript
 import { filter, iterate } 'conductor'
@@ -33,5 +33,5 @@ const predicate = iterate(iterable)
 filter(predicate, characters) // ['Luke', 'Han']
 ```
 
-Let's say we have an array of characters, `characters`,  and another one, `isGood`, which indicates if each character is indeed good. We need to filter the characters to keep only the good guys, so we need to iterate simultaneously over the two collections. Let's get an `Iterable` out of our `isGood` array. Then, let's call `iterate` on it. This will be our predicate function: each time it will be called by `filter` while iterating over our `characters` array, it will return the next value from `isGood`, indicating if the current character is one the good guys.
+Let's say we have an array of characters, `characters`, and another one, `isGood`, which indicates if each character is indeed good. We need to filter the characters to keep only the good guys, so we need to iterate simultaneously over the two collections. Let's get an `Iterable` out of our `isGood` array. Then, let's call `iterate` on it. This will be our predicate function: each time it will be called by `filter` while iterating over our `characters` array, it will return the next value from `isGood`, indicating if the current character is one the good guys.
 

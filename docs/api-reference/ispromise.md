@@ -1,6 +1,6 @@
 # isPromise
 
-**`isPromise :: Any value => Boolean result`**
+`isPromise :: Any value => Boolean result`****
 
 ## description
 

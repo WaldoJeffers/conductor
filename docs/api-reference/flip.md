@@ -1,16 +1,14 @@
 # flip
 
-**`flip ::  Function f -> Function g`**
+`flip :: Function f -> Function g`
 
 ## description
 
 Returns a new function function which expects the same parameters as the provided one, but in reverse order. It's often useful to create partially applied functions where the known argument is not the first one.
 
-
-
 ## examples
 
-#### basic example
+### basic example
 
 ```javascript
 import { flip } from 'conductor'
@@ -19,7 +17,7 @@ const minus = (a, b) => a - b
 flip(minus)(3, 10) // 7
 ```
 
-#### creating a partially applied function
+### creating a partially applied function
 
 ```javascript
 import { apply, map, flip } from 'conductor'

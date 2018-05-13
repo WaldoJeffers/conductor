@@ -1,6 +1,6 @@
 # curryN
 
-**`curryN :: (Number arity, Function f) -> Function g`**
+`curryN :: (Number arity, Function f) -> Function g`
 
 ## description
 
