@@ -1,6 +1,8 @@
-# equals
+---
+description: Check if two items are equal
+---
 
-equals :: \(Any a, Any b\) -&gt; Boolean result
+# equals
 
 ```erlang
 equals :: (Any a, Any b) -> Boolean result
@@ -9,8 +11,6 @@ equals :: (Any a, Any b) -> Boolean result
 ### description
 
 Checks if two items are equal.
-
-
 
 ### example
 
