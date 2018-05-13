@@ -1,5 +1,5 @@
 ---
-description: Extract a fragment from an array
+description: Extract a fragment on an array
 ---
 
 # slice

@@ -1,5 +1,5 @@
 ---
-description: Get a value's type
+description: Get the input's type
 ---
 
 # type

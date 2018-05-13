@@ -1,7 +1,3 @@
----
-description: Execute a function for each item in a collection
----
-
 # forEach
 
 ```erlang

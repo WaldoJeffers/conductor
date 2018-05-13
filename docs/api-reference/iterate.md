@@ -1,5 +1,5 @@
 ---
-description: Get an iterator
+description: Return an iterator
 ---
 
 # iterate
