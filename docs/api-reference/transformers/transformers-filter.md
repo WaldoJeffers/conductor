@@ -1,10 +1,12 @@
 ---
-description: Create a filtering transformer
+description: A filtering transformer
 ---
 
 # transformers/filter
 
-`transformers/filter :: Function predicate => (Reducer input => Reducer output)`
+```erlang
+transformers/filter :: Function predicate => (Reducer input => Reducer output)
+```
 
 ## description
 
