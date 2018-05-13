@@ -1,10 +1,14 @@
 ---
-description: Return an iterator
+description: Get an iterator
 ---
 
 # iterate
 
 `iterate :: Iterable => () => Any value`
+
+```erlang
+iterate :: Iterable => () => Any value
+```
 
 ## description
 
@@ -18,11 +22,13 @@ Returns a function which iterate over an [`Iterable`](https://developer.mozilla.
 import { iterate } from 'conductor'
 
 const array = [2, 4]
-const iterator = array.values()
-iterate(iterator)() // 2
+const iterator = iterate(array)
+iterator() // 2
+iterator() // 4
+iterator() // undefined
 ```
 
-Here, we simply get an `Iterable` from an array by calling its `values` method. Then, we execute iterate and call its result. It returns the array's first value.
+Here, we simply get an `Iterator` from an array by calling `iterate` on it. Each call to the iterator will return the value of the next item in the `Iterable`.
 
 ### iterating simultaneously over two collections
 
@@ -31,11 +37,10 @@ import { filter, iterate } 'conductor'
 
 const characters = ['Luke', 'Han', 'Darth Vader']
 const isGood = [true, true, false]
-const iterable = isGood.values()
-const predicate = iterate(iterable)
+const predicate = iterate(isGood)
 
 filter(predicate, characters) // ['Luke', 'Han']
 ```
 
-Let's say we have an array of characters, `characters`, and another one, `isGood`, which indicates if each character is indeed good. We need to filter the characters to keep only the good guys, so we need to iterate simultaneously over the two collections. Let's get an `Iterable` out of our `isGood` array. Then, let's call `iterate` on it. This will be our predicate function: each time it will be called by `filter` while iterating over our `characters` array, it will return the next value from `isGood`, indicating if the current character is one the good guys.
+Let's say we have an array of characters, `characters`, and another one, `isGood`, which indicates if each character is indeed good. We need to filter the characters to keep only the good guys, so we need to iterate simultaneously over the two collections. Let's get an `Iterator` out of our `isGood` array by calling `iterate` on it. This will be our predicate function: each time it will be called by `filter` while iterating over our `characters` array, it will return the next value from `isGood`, indicating if the current character is one the good guys.
 
