@@ -4,7 +4,9 @@ description: Get the next value of an iterator
 
 # next
 
-`next :: Iterator iterator => Any value`
+```erlang
+next :: Iterator iterator => Any value
+```
 
 ## description
 
@@ -15,7 +17,7 @@ Returns the next value of an [`Iterator`](https://developer.mozilla.org/en-US/do
 ```javascript
 import { next } from 'conductor'
 
-const numbers = [3, 1, 4]
+const iterator = new Set([3, 1, 4]).values()
 next(numbers) // 3
 next(numbers) // 1
 next(numbers) // 4
