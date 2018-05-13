@@ -61,7 +61,7 @@ const concat = join(', ')
 compose(concat, getName, isGood)(jedis) // 'Luke, Yoda'
 ```
 
-All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis`, and we want to retrieve a concataneted string of all the good guys' name. We first define an`isGood`function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called`concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
+All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis`, and we want to retrieve a concatenated string of all the good guys' name. We first define an`isGood`function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called `concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
 
 ## documentation
 
