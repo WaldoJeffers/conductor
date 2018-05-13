@@ -4,7 +4,9 @@ description: Check if a value is a Promise
 
 # isPromise
 
-`isPromise :: Any value => Boolean result`****
+```erlang
+isPromise :: Any value => Boolean result
+```
 
 ## description
 
