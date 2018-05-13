@@ -4,7 +4,9 @@ description: Add an item at the beginning of an array
 
 # prepend
 
-`prepend :: (Any item, Array input) => Array output`
+```erlang
+prepend :: (Any item, Array input) => Array output
+```
 
 ## description
 
