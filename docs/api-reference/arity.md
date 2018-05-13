@@ -1,6 +1,12 @@
+---
+description: Create a function of the desired arity
+---
+
 # arity
 
-### `arity :: (Number length, Function fn) -> Function fn`
+```erlang
+arity :: (Number length, Function fn) -> Function fn
+```
 
 ## description
 
