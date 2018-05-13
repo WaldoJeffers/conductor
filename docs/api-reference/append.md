@@ -1,4 +1,12 @@
+---
+description: Add an item at the end of an array
+---
+
 # append
+
+```erlang
+append :: (Any item, Array input) => Array output
+```
 
 ## description
 
