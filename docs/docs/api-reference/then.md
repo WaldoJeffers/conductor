@@ -1,7 +1,3 @@
----
-description: Call a function after some some has executed
----
-
 # then
 
 ```erlang

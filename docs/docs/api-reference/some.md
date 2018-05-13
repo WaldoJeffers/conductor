@@ -1,7 +1,3 @@
----
-description: Check if at least one item in a collection satisfies a predicate
----
-
 # some
 
 **`some :: (Function predicate, Collection collection) => Boolean|Promise<Boolean> output`**

@@ -1,7 +1,3 @@
----
-description: Insert or updates an item in an array
----
-
 # upsert
 
 ```erlang

@@ -1,7 +1,3 @@
----
-description: Reduces a collection using a transformer and a reducer
----
-
 # transduce
 
 **`transduce :: (Function transformer, Function reducer, Any seed, Collection collection) => Any output`**

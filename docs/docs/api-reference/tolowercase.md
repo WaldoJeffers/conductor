@@ -1,8 +1,4 @@
----
-description: Convert a string to lowercase
----
-
-# toLowerCase
+# tolowercase
 
 **`toLowerCase :: String input => String output`**
 

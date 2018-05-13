@@ -1,7 +1,3 @@
----
-description: Get the input's type
----
-
 # type
 
 ```erlang

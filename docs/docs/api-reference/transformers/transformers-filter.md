@@ -1,8 +1,4 @@
----
-description: Create a filtering transformer
----
-
-# transformers/filter
+# transformers-filter
 
 **`transformers/filter :: Function predicate => (Reducer input => Reducer output)`**
 

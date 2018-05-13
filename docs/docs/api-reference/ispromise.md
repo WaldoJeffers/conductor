@@ -1,4 +1,4 @@
-# isPromise
+# ispromise
 
 **`isPromise :: Any value => Boolean result`**
 

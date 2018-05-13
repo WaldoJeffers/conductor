@@ -1,4 +1,4 @@
-# example use cases
+# example-use-cases
 
 ## decoding JWTs
 

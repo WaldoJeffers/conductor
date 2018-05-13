@@ -1,4 +1,4 @@
-# curryN
+# curryn
 
 **`curryN :: (Number arity, Function f) -> Function g`**
 
