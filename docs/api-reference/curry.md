@@ -1,6 +1,10 @@
+---
+description: Curry a function
+---
+
 # curry
 
-```text
+```erlang
 curry :: Function f => Function g
 ```
 
