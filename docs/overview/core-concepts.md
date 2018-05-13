@@ -1,4 +1,4 @@
-# core-concepts
+# Core concepts
 
 ## Control of the execution flow
 

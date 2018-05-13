@@ -1,8 +1,6 @@
-# findindex
+# findIndex
 
-```erlang
-findIndex :: (Function predicate, Collection collection) -> Any index
-```
+**`findIndex :: (Function predicate, Collection collection) -> Any index`**
 
 ## description
 

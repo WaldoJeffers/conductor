@@ -1,4 +1,4 @@
-# foreach
+# forEach
 
 **`forEach :: (Function callback, Collection collection) -> undefined | Promise<undefined>`**
 

@@ -1,4 +1,4 @@
-# introduction
+# Introduction
 
 Easily mix _asynchronous_ and _synchronous_ code using functional programming.
 

@@ -1,3 +1,7 @@
+---
+description: Get a collection's values
+---
+
 # values
 
 ```erlang

@@ -1,3 +1,7 @@
+---
+description: Replace an item in array
+---
+
 # replace
 
 **`replace :: (Number index, Any value, Array input) => Array output`**

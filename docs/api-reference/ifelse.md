@@ -1,4 +1,4 @@
-# ifelse
+# ifElse
 
 **`ifElse :: (Function predicate, Function ifTrue, Function, ifFalse) -> (a, b, ..., z) -> Any | Promise<Any> value`**
 

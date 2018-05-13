@@ -1,3 +1,7 @@
+---
+description: Extract a fragment on an array
+---
+
 # slice
 
 **`slice :: (Number start, Number end, Array input) => Array output`**
