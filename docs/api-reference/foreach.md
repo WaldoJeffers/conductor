@@ -1,6 +1,12 @@
+---
+description: Execute a function for each item in a collection
+---
+
 # forEach
 
-`forEach :: (Function callback, Collection collection) -> undefined | Promise<undefined>`****
+```erlang
+forEach :: (Function callback, Collection collection) -> undefined | Promise<undefined>
+```
 
 ## description
 
