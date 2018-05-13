@@ -1,5 +1,5 @@
 ---
-description: A filtering transformer
+description: Create a filtering transformer
 ---
 
 # transformers/filter
