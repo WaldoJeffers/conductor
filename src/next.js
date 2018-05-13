@@ -1,3 +1,3 @@
-const next = iterable => iterable.next().value
+const next = iterator => iterator.next().value
 
 module.exports = next
