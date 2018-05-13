@@ -44,10 +44,17 @@
 * [replace](../api-reference/replace.md)
 * [slice](../api-reference/slice.md)
 * [some](../api-reference/some.md)
+* [then](../api-reference/then.md)
 * [toLowerCase](../api-reference/tolowercase.md)
+* [transduce](../api-reference/transduce.md)
+* [transformers](../api-reference/transformers/README.md)
+  * [transformers/filter](../api-reference/transformers/transformers-filter.md)
+  * [transformers/map](../api-reference/transformers/transformers-map.md)
+* [type](../api-reference/type.md)
+* [upsert](../api-reference/upsert.md)
+* [values](../api-reference/values.md)
 
 ## Guides
 
 * [example use cases](../guides/example-use-cases.md)
-* [transduce](../guides/transduce.md)
 
