@@ -6,7 +6,7 @@ The most important concept of **conductor** is that _you_ are in control of the 
 
 ### A quick example
 
-Let's say we have a couple of utility functions, some synchronous and other asynchronous, and a user \(Luke\) whose favorite starship we would like to know.
+Let's say we have a couple of utility functions, some synchronous and other asynchronous, and a user \(Luke\) whose favorite starship we would like to know \(no spoilers please!\).
 
 ```javascript
 const getStarships = user => user.starships // sync
