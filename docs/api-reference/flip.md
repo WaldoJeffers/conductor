@@ -1,6 +1,12 @@
+---
+description: Reverse the order of a function's parameters
+---
+
 # flip
 
-`flip :: Function f -> Function g`
+```erlang
+flip :: Function f -> Function g
+```
 
 ## description
 
