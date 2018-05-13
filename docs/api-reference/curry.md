@@ -1,6 +1,12 @@
+---
+description: Curry a function
+---
+
 # curry
 
-`curry :: Function f -> Function g`
+```text
+curry :: Function f => Function g
+```
 
 ## description
 
