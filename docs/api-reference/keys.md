@@ -4,7 +4,9 @@ description: Retrieve a collection's keys as an array
 
 # keys
 
-`keys :: Collection collection => Array values`
+```erlang
+keys :: Collection collection => Array values
+```
 
 ## description
 
