@@ -15,10 +15,10 @@ Checks if two items are equal.
 ### example
 
 ```javascript
-import { equal } from 'conductor'
+import { equals } from 'conductor'
 
-equal(1, 1) // tru
-equal(1, 2) // false
+equals(1, 1) // true
+equals(1, 2) // false
 ```
 
 
