@@ -1,16 +1,20 @@
+---
+description: Get a collection's entries as an array
+---
+
 # entries
 
 ```erlang
-entries :: Collection collection -> Array entries
-```
+entries :: Collection collection => Array entries
+```
 
-## description
+### description
 
-Returns a `Collection` (`Array | Set | Object | Map`)'s entries as bi-dimensional array of `[key, value]` pairs.
+Returns a `Collection` \(`Array | Set | Object | Map`\)'s entries as a bi-dimensional array of `[key, value]` pairs.
 
-## example
+### examples
 
-### array
+#### array
 
 ```javascript
 import { entries } from 'conductor'
@@ -18,7 +22,7 @@ import { entries } from 'conductor'
 entries([3, 1, 4]) // [[0, 3], [1, 1], [2, 4]]
 ```
 
-## set
+#### set
 
 ```javascript
 import { entries } from 'conductor'
@@ -30,7 +34,7 @@ entries(new Set([3, 1, 4])) // [[3, 3], [1, 1], [4, 4]]
 For Sets, the key is equal to the value
 {% endhint %}
 
-## object
+#### object
 
 ```javascript
 import { entries } from 'conductor'
@@ -38,7 +42,7 @@ import { entries } from 'conductor'
 entries({ hello: 3, world: 1 }) // [['hello', 3], ['world', 1]]
 ```
 
-## map
+#### map
 
 ```javascript
 import { entries } from 'conductor'
