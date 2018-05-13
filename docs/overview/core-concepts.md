@@ -92,7 +92,7 @@ const getFavoriteStarshipName = await compose(getStarshipName, fetchStarship, he
 getFavoriteStarshipName(Luke) // 'X-Wing'
 ```
 
-Now this works, and we can achieve a proper _point-free_ style, without breaking ~~a sweat~~ `getStarships`'s synchronous nature 😎. It works because **conductor** knows how to handle both synchronous and asynchronous functions, but the previous code would also run \(meaning _not throw an error_\) if we didn't use the `await` keyword. It would simply return a `Promise` instead of a `String`. So you are in _full control_ of the execution flow: you can mix synchronous and asynchronous functions in `compose`, decide exactly when you want to `await`, but don't forget that you will need to do it at some point if you want to use the returned value outside of `compose`'s limits \(and don't forget to [catch your errors!](https://github.com/tc39/ecmascript-asyncawait/issues/72)\).
+Now this works, and we can achieve a proper _point-free_ style, without breaking ~~a sweat~~ `getStarships`'s synchronous nature 😎. It works because **conductor** knows how to handle both synchronous and asynchronous functions automatically. The previous code would also run \(meaning _not throw an error_\) if we didn't use the `await` keyword. It would simply return a `Promise` instead of a `String`. So you are in _full control_ of the execution flow: you can mix synchronous and asynchronous functions in `compose`, decide exactly when you want to `await`, but don't forget that you will need to do it at some point if you want to use the returned value outside of `compose`'s limits \(and don't forget to [catch your errors!](https://github.com/tc39/ecmascript-asyncawait/issues/72)\).
 
 ## Functional programming style
 
