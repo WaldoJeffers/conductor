@@ -1,5 +1,4 @@
-![conductor](https://user-images.githubusercontent.com/7644970/39099223-3ac23bca-4677-11e8-8c65-c29991925972.png)
---
+## ![conductor](https://user-images.githubusercontent.com/7644970/39099223-3ac23bca-4677-11e8-8c65-c29991925972.png)
 
 [![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor)
 [![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor)
@@ -14,6 +13,34 @@ It provides a set of utility functions which can be used both with _asynchronous
 
 ```
 npm install conductor
+```
+
+## examples
+
+Here are a few examples of what you can do with **conductor**.
+
+### use asynchronous functions seamlessly
+
+```js
+import { map } from 'conductor'
+
+const fetchCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
+const character_ids = [1, 2, 3]
+await map(fetchCharacter, character_ids) // [{id: 1, name: 'Luke'}, ...]
+```
+
+You can use `map` with an asynchronous mapper and directly use the `await` keyword. No need to use `Promise.all` like you need to with `Array.prototype.map` or `lodash.map`.
+
+### compose things
+
+```js
+import { compose, get } from 'conductor'
+
+const character_id = 1
+const fetchCharacter = id =>
+  fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
+const fetchPlanet = url => fetch(url).then(res => res.json())
+await compose(get('name'), fetchPlanet, get('homeworld'), fetchCharacter)(character_id)
 ```
 
 ## documentation
