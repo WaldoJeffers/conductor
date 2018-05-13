@@ -32,6 +32,7 @@ const reduce = require('./reduce')
 const replace = require('./replace')
 const slice = require('./slice')
 const some = require('./some')
+const then = require('./then')
 const toLowerCase = require('./toLowerCase')
 const transduce = require('./transduce')
 const type = require('./type')
@@ -73,6 +74,7 @@ module.exports = {
   replace,
   slice,
   some,
+  then,
   toLowerCase,
   transduce,
   type,
