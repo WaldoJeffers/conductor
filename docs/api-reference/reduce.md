@@ -1,10 +1,12 @@
 ---
-description: Combine a collection's values
+description: Reduce a collection
 ---
 
 # reduce
 
-`reduce :: (Function reducer, Any seed, Collection collection) => Any|Promise<Any> output`
+```erlang
+reduce :: (Function reducer, Any seed, Collection collection) => Any|Promise<Any> output
+```
 
 ## description
 
