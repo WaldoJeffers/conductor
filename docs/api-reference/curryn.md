@@ -1,6 +1,10 @@
 # curryN
 
-`curryN :: (Number arity, Function f) -> Function g`
+```erlang
+curryN :: (Number arity, Function f) => Function g
+```
+
+curryN :: \(Number arity, Function f\) =&gt; Function g
 
 ## description
 
