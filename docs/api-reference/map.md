@@ -4,7 +4,9 @@ description: Map a collection to another one
 
 # map
 
-`map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>`
+```erlang
+map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>
+```
 
 ## description
 
