@@ -4,7 +4,7 @@ description: Flatten a collection of collections
 
 # pluck
 
-```javascript
+```erlang
 pluck :: (Any key, Collection<Collections> input) => Collection<Any> output
 ```
 
