@@ -4,7 +4,7 @@ description: Get the first item in a collection
 
 # head
 
-```text
+```erlang
 head :: Collection collection -> Any value
 ```
 
