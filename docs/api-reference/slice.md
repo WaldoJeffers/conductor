@@ -1,10 +1,12 @@
 ---
-description: Extract a fragment on an array
+description: Extract a fragment from an array
 ---
 
 # slice
 
-`slice :: (Number start, Number end, Array input) => Array output`
+```erlang
+slice :: (Number start, Number end, Array input) => Array output
+```
 
 ## description
 
