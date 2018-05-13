@@ -1,7 +1,12 @@
+---
+description: FP equivalent of if/else
+---
+
 # ifElse
 
-```text
-ifElse :: (Function predicate, Function ifTrue, Function, ifFalse) -> (a, b, ..., z) -> Any | Promise<Any> value
+```erlang
+ifElse :: (Function predicate, Function ifTrue, Function, ifFalse)
+    => (a, b, ..., z) => Any | Promise<Any> output
 ```
 
 ## description
