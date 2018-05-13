@@ -1,6 +1,12 @@
+---
+description: Find an item's index in a collection
+---
+
 # findIndex
 
-`findIndex :: (Function predicate, Collection collection) -> Any index`
+```erlang
+findIndex :: (Function predicate, Collection collection) -> Any index
+```
 
 ## description
 
