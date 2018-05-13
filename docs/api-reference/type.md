@@ -1,5 +1,5 @@
 ---
-description: Get the input's type
+description: Get a value's type
 ---
 
 # type
@@ -7,8 +7,6 @@ description: Get the input's type
 ```erlang
 type :: Any input => String type
 ```
-
-type :: Any input =&gt; String type
 
 ## description
 

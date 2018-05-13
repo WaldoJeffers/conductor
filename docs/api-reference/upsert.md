@@ -1,5 +1,5 @@
 ---
-description: Insert or updates an item in an array
+description: Upsert an item in an array
 ---
 
 # upsert
@@ -10,7 +10,7 @@ upsert :: (Function predicate, Any item, Array input) => Array output
 
 ## description
 
-Insert or updates \(_upserts_\) an item in an input array. The predicate function checks for the item's existence in the input array. If it does not exist, a new array is returned with the values from the input array and the item appended to them.
+Inserts or updates \(_upserts_\) an item in an input array. The predicate function checks for the item's existence in the input array. If it does not exist, a new array is returned with the values from the input array and the item appended to them.
 
 {% hint style="info" %}
 Like all functions in **conductor**, `upsert` is a pure function and will not modify the input array.
