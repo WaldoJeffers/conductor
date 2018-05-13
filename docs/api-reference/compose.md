@@ -1,6 +1,12 @@
+---
+description: Compose functions right to left
+---
+
 # compose
 
-`compose :: (Function f, Function g, ...) -> Function f ∘ g ∘ ...`
+```erlang
+compose :: (Function f, Function g, ...) => Function f ∘ g ∘ ...
+```
 
 ## description
 
