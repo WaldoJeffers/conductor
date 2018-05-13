@@ -8,7 +8,7 @@ Nearly all of our today JavaScript code uses _asynchronous_ operations, whether 
 
 ### example
 
-Let's say we want to know who's really from Tatooine, using the awesome [Star Wars API](https://swapi.co/):
+Let's say we have an array of Star Wars characters, and we want to know who's really from Tatooine, using the awesome [Star Wars API](https://swapi.co/):
 
 ```javascript
 const characters = [
@@ -35,7 +35,7 @@ const tatooine_residents = await characters.filter(isFromTatooine) // [Luke, C-3
 const tatooine_residents = await filter(isFromTatooine, characters) // [Luke, C-3PO, Darth Vader]
 ```
 
-The sharp-eyed reader which you are has already noticed that something seems to have gone wrong in our first filtering attempt: the result is a valid array, but last time you checked, R2 and Leia were definitely not from Tatooine! What happens is that `Array.prototype.filter` has no idea your predicate is asynchronous and does not how to wait for it. But since this predicate still returns a `Promise` which evaluates to a [truthy value](https://developer.mozilla.org/en-US/docs/Glossary/Truthy), it considers that the values match the predicate and keeps them. Since `Array.prototype.filter` is itself synchronous, the `await` keyword is not helping here and only converts the result to a _resolved_ \`Promise.
+The sharp-eyed reader which you are has already noticed that something seems to have gone wrong in our first filtering attempt: the result is a valid array, but last time you checked, R2 and Leia were definitely not from Tatooine! What happens is that `Array.prototype.filter` has no idea your predicate is asynchronous and does not how to wait for it. But since this predicate still returns a `Promise` which evaluates to a [truthy value](https://developer.mozilla.org/en-US/docs/Glossary/Truthy), it considers that the values match the predicate and keeps them. Since `Array.prototype.filter` is itself synchronous, the `await` keyword is not helping here and only converts the result to a _resolved_  `Promise`.
 
-In our second attempt, the `filter` method from **conductor** _automatically_ detects that your predicate is _asynchronous_ and returns a `Promise` which will only be resolved when all items are properly filtered. Just add the magical `await` keyword to wait until the `Promise` is resolved, and _voilà_!
+In our second attempt, the `filter` method from **conductor** _automatically_ detects that our predicate is _asynchronous_ and returns a `Promise` which will only be resolved when all items are properly filtered. Just add the magical `await` keyword to wait until the `Promise` is resolved, and _voilà_!
 
