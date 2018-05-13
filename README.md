@@ -5,7 +5,7 @@
 [![Codeship Status for WaldoJeffers/conductor](https://img.shields.io/codeship/da09eb70-22e7-0136-b547-4e8bca269d75.svg?style=flat-square)](https://app.codeship.com/projects/286044)
 [![codecov](https://img.shields.io/codecov/c/github/WaldoJeffers/conductor.svg?style=flat-square)](https://codecov.io/gh/WaldoJeffers/conductor)
 
-Conductor is a modern utility library to help you control the execution flow using functional programming.
+**conductor** is a modern utility library to help you control the execution flow using functional programming.
 
 It provides a set of utility functions which can be used both with _asynchronous_ and _synchronous_ code, allowing you to control your execution flow very clearly and with a minimum of code. The library is designed in a functional programming spirit, to provide a coherent API and highly composable functions. Think of it as if [Ramda](http://ramdajs.com/) & [Async](http://caolan.github.io/async/) had a baby.
 
@@ -44,13 +44,30 @@ await compose(get('name'), fetchPlanet, get('homeworld'), fetchCharacter)(charac
 
 You can **compose** functions seamlessly, without ever wondering if you need to use `Promise.prototype.then` because one function returns a `Promise. Simply add`await` before compose if one your functions is asynchronous.
 
-###
+### functional by design
+
+```js
+import { map, filter } from 'conductor'
+
+const jedis = [
+  { name: 'Luke', side: 'light' },
+  { name: 'Yoda', side: 'light' },
+  { name: 'Darth Vader', side: 'dark' },
+]
+const isGood = filter(compose(equals('light'), get('side')))
+const getName = map(get('name'))
+const concat = join(', ')
+
+compose(concat, getName, isGood)(jedis) // 'Luke, Yoda'
+```
+
+All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis, and we want to retrieve a concataneted string of all the good guys' name. We first define an`isGood`function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called`concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
 
 ## documentation
 
-* [introduction](https://waldojeffers.gitbook.io/conductor/)
-* [core concepts](https://waldojeffers.gitbook.io/conductor/overview/core-concepts)
-* [API reference](https://waldojeffers.gitbook.io/conductor/api-reference/always)
+* [introduction](https://conductor.js.org)
+* [core concepts](https://conductor.js.org/overview/core-concepts)
+* [API reference](https://conductor.js.org/api-reference/always)
 
 ## influences
 
