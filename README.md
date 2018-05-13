@@ -42,7 +42,7 @@ const fetchPlanet = url => fetch(url).then(res => res.json())
 await compose(get('name'), fetchPlanet, get('homeworld'), fetchCharacter)(character_id) // Tatooine
 ```
 
-You can **compose** functions seamlessly, without ever wondering if you need to use `Promise.prototype.then` because one function returns a `Promise. Simply add`await` before compose if one your functions is asynchronous.
+You can **compose** functions seamlessly, without ever wondering if you need to use `Promise.prototype.then` because one function returns a `Promise`. Simply add `await` before compose if one your functions is asynchronous.
 
 ### functional by design
 
