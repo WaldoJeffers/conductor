@@ -1,5 +1,5 @@
 ---
-description: Transform and reduce a collection
+description: Reduces a collection using a transformer and a reducer
 ---
 
 # transduce

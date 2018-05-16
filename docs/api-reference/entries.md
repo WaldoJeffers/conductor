@@ -1,7 +1,3 @@
----
-description: Get a collection's entries as an array
----
-
 # entries
 
 ```erlang

@@ -1,5 +1,5 @@
 ---
-description: Get an iterator
+description: Return an iterator
 ---
 
 # iterate
@@ -12,7 +12,7 @@ iterate :: Iterable => () => Any value
 
 Returns a function which iterate over an [`Iterable`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol) by calling its next method every time it is called. iterate is rarely useful by itself. However, it can be extremely useful when trying to iterate simultaneously over multiple iterables to combine them.
 
-## example
+## examples
 
 ### basic example
 

@@ -1,5 +1,5 @@
 ---
-description: Reduce a collection
+description: Combine a collection's values
 ---
 
 # reduce
