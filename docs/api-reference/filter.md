@@ -5,7 +5,7 @@ description: Filter a collection
 # filter
 
 ```erlang
-filter :: (Collection collection, Function predicate) -> Collection | Promise<Collection>
+filter :: (Function predicate, Collection collection) -> Collection | Promise<Collection>
 ```
 
 ## description
@@ -82,4 +82,3 @@ await filter(double, values) // [0, 2]
 ```
 
 If your predicate function is _asynchronous_, you will need to use `await` \(or `Promise.prototype.then`\) because the result will be a `Promise`.
-
