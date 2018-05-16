@@ -5,7 +5,7 @@ description: Map a collection to another one
 # map
 
 ```erlang
-map :: (Collection collection, Function mapper) -> Collection | Promise<Collection>
+map :: (Function mapper, Collection collection) -> Collection | Promise<Collection>
 ```
 
 ## description
@@ -32,4 +32,3 @@ await map(double, values) // [0, 4, 8]
 **Important**
 
 If you use an _asynchronous_ mapper, all `mapper` calls will be done in **parallel**, but the input collection's **order will be preserved**.
-
