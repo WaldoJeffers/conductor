@@ -19,6 +19,7 @@ const get = require('./get')
 const head = require('./head')
 const identity = require('./identity')
 const ifElse = require('./ifElse')
+const join = require('./join')
 const into = require('./into')
 const isPromise = require('./isPromise')
 const iterate = require('./iterate')
@@ -64,6 +65,7 @@ module.exports = {
   into,
   isPromise,
   iterate,
+  join,
   keys,
   map,
   next,
