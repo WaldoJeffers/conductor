@@ -1,3 +1,7 @@
+---
+description: Find an item's index in a collection
+---
+
 # findIndex
 
 ```erlang

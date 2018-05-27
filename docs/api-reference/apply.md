@@ -1,3 +1,7 @@
+---
+description: Pass an array of arguments to a function and call it
+---
+
 # apply
 
 ```erlang

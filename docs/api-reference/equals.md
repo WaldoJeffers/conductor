@@ -1,3 +1,7 @@
+---
+description: Check if two items are equal
+---
+
 # equals
 
 ```erlang

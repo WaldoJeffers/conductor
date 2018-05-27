@@ -1,3 +1,7 @@
+---
+description: Capitalize a string's first letter
+---
+
 # capitalize
 
 ```erlang

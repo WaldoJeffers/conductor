@@ -1,3 +1,7 @@
+---
+description: Identity function
+---
+
 # identity
 
 ```erlang

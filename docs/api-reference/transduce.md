@@ -72,7 +72,7 @@ Using `transduce` ensures the iteration is only done once, no matter how many tr
 * `retrieveGoodGuysName` is our transformer: it accepts a reducer and returns another one, but decorated with the actual transformation we want to perform
 * `seed` is simply an empty array
 
-During the transduce operation, `concatNames`** **is decorated by `retrieveGoodGuysName` and then our characters array is iterated on, and each item goes through the transforming operation before the reducer gets called. In the end, we get `['Luke', 'Han']`. Hooray!
+During the transduce operation, `concatNames` ****is decorated by `retrieveGoodGuysName` and then our characters array is iterated on, and each item goes through the transforming operation before the reducer gets called. In the end, we get `['Luke', 'Han']`. Hooray!
 
 ### optimizing the previous example with utility transformers
 
@@ -95,7 +95,7 @@ So conductor also features two utility transformer functions, which can be very 
 * `transformers/filter`
 * `transformers/map`
 
-**You can write **_**any**_** data transformation as a combination of those two functions. **Let's get back at our example.
+**You can write** _**any**_ **data transformation as a combination of those two functions.** Let's get back at our example.
 
 Let's re-define our `retrieveGoodGuysName` as a combination of `filter` and `map`:
 

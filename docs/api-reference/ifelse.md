@@ -1,3 +1,7 @@
+---
+description: FP equivalent of if/else
+---
+
 # ifElse
 
 ```erlang

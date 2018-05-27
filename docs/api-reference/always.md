@@ -1,3 +1,7 @@
+---
+description: Constant combinator
+---
+
 # always
 
 ```erlang

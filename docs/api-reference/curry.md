@@ -1,3 +1,7 @@
+---
+description: Curry a function
+---
+
 # curry
 
 ```erlang

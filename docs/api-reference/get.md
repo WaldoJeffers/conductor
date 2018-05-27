@@ -1,3 +1,7 @@
+---
+description: Get a collection's item by its key
+---
+
 # get
 
 ```erlang
@@ -8,7 +12,7 @@ get :: (Any key, Collection collection) => Any value
 
 Returns the value of the item associated to the provided key. The key will the item's index if the collection is an `Array`, the item's key if the collection is an `Object` or a `Map`, or the item's value if the collection is a `Set` \(because keys and values are identical in `Sets`\).
 
-Like all functions in **conductor, **`get` is curried.
+Like all functions in **conductor,** `get` is curried.
 
 ## examples
 
