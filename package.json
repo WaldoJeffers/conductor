@@ -14,7 +14,7 @@
     "jest": "^22.4.3"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=7"
   },
   "dependencies": {},
   "repository": {
@@ -22,6 +22,10 @@
     "url": "git+https://github.com/WaldoJeffers/conductor.git"
   },
   "keywords": [
+    "javascript",
+    "utility-library",
+    "functional",
+    "utility",
     "fp",
     "async"
   ],
