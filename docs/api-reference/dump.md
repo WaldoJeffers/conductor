@@ -1,7 +1,11 @@
+---
+description: Transform a collection into another one of the same type
+---
+
 # dump
 
 ```erlang
-dump: (Transformer fn, Collection input) -> Collection output
+dump: (Transformer fn, Collection input) => Collection output
 ```
 
 ## description
@@ -17,4 +21,3 @@ import { map } from 'conductor/transformers'
 const times2 = x => 2 * x
 dump(map(times2), [3, 1, 4]) // [6, 2, 8]
 ```
-

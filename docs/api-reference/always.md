@@ -5,7 +5,7 @@ description: Constant combinator
 # always
 
 ```erlang
-always :: Any value -> () -> Any value
+always :: Any value => () => Any value
 ```
 
 ## description
@@ -23,4 +23,3 @@ always2() // 2
 always2(8) // 2
 always2(null) // 2
 ```
-

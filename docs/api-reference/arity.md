@@ -5,7 +5,7 @@ description: Change a function's arity
 # arity
 
 ```erlang
-arity :: (Number length, Function fn) -> Function fn
+arity :: (Number length, Function fn) => Function fn
 ```
 
 ## description
@@ -27,4 +27,3 @@ words.forEach(arity(1, console.log))
 // 'hello'
 // 'world'
 ```
-

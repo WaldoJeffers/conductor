@@ -5,7 +5,7 @@ description: Capitalize a string's first letter
 # capitalize
 
 ```erlang
-capitalize :: String input -> String output
+capitalize :: String input => String output
 ```
 
 ## description
@@ -20,4 +20,3 @@ import { capitalize } from 'conductor'
 capitalize('hello') // 'Hello'
 capitalize('hello world') // 'Hello world'
 ```
-

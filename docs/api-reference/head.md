@@ -5,7 +5,7 @@ description: Get the first item in a collection
 # head
 
 ```erlang
-head :: Collection collection -> Any value
+head :: Collection collection => Any value
 ```
 
 ## description
@@ -35,4 +35,3 @@ head(map) // 2
 head(object) // 2
 head(set) // 'drumsticks'
 ```
-

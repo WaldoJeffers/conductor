@@ -5,14 +5,14 @@ description: Execute a function for each item in a collection
 # forEach
 
 ```erlang
-forEach :: (Function callback, Collection collection) -> undefined | Promise<undefined>
+forEach :: (Function callback, Collection collection) => undefined | Promise<undefined>
 ```
 
 ## description
 
 Iterates over a collection and calls the provided callback function for each item in the collection. The callback function should have the following signature:
 
-`(Any value, Any key, Collection collection) -> Any`
+`(Any value, Any key, Collection collection) => Any`
 
 where:
 
@@ -40,4 +40,3 @@ forEach(numbers, log)
 // 1
 // 4
 ```
-

@@ -5,12 +5,12 @@ description: Find an item's index in a collection
 # findIndex
 
 ```erlang
-findIndex :: (Function predicate, Collection collection) -> Any index
+findIndex :: (Function predicate, Collection collection) => Any index
 ```
 
 ## description
 
-Finds an item's index in a `Collection` using a predicate function. The predicate function has the following signature: `predicate :: (Any value, Any index, Collection collection) -> Boolean`. It should return a `Boolean` is called with the following arguments:
+Finds an item's index in a `Collection` using a predicate function. The predicate function has the following signature: `predicate :: (Any value, Any index, Collection collection) => Boolean`. It should return a `Boolean` is called with the following arguments:
 
 * **value**: the item's value
 * **index**: the item's index or key. For arrays, the index will be a `Number`, for objects and maps it will be a `String`, and for sets, it will be equal to the item's value
@@ -40,7 +40,7 @@ findIndex(predicate, words) // 1
 import { findIndex } from 'conductor'
 
 const words = new Set(['hello', 'world'])
-const translator = {hola: 'hello', mundo: 'world'}
+const translator = { hola: 'hello', mundo: 'world' }
 const otherTranslator = new Map([['bonjour', 'hello'], ['monde'], ['world']])
 const predicate = word => word === 'world'
 
@@ -62,5 +62,4 @@ const predicate = id => getCharacter(id).then(character => character.name === 'R
 await findIndex(predicate, character_ids) // 1
 ```
 
-Here, we have an asynchronous predicate which takes a character\_id and checks if the character is R2-D2, using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
-
+Here, we have an asynchronous predicate which takes a character_id and checks if the character is R2-D2, using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
