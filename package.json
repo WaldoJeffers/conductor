@@ -33,5 +33,6 @@
     "url": "https://github.com/WaldoJeffers/conductor/issues"
   },
   "homepage": "https://github.com/WaldoJeffers/conductor#readme",
-  "description": ""
+  "description": "A modern & functional JavaScript utility library",
+  "sideEffects": false
 }
