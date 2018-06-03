@@ -9,13 +9,15 @@
 
 It provides a set of utility functions which can be used both with _asynchronous_ and _synchronous_ code, allowing you to control your execution flow very clearly and with a minimum of code. The library is designed in a functional programming spirit, to provide a coherent API and highly composable functions. Think of it as if [Ramda](http://ramdajs.com/) & [Async](http://caolan.github.io/async/) had a baby.
 
-## installation
+Read more on [Why I'm building conductor](https://medium.com/@achille.urbain/why-im-building-conductor-fa780da821cd).
+
+## 🔧 installation
 
 ```
 npm install conductor
 ```
 
-## examples
+## ✨ examples
 
 Here are a few examples of what you can do with **conductor**.
 
@@ -47,7 +49,7 @@ You can **compose** functions seamlessly, without ever wondering if you need to 
 ### functional by design
 
 ```js
-import { map, filter } from 'conductor'
+import { compose, equals, get, join, map, filter } from 'conductor'
 
 const jedis = [
   { name: 'Luke', side: 'light' },
@@ -63,8 +65,9 @@ compose(concat, getName, isGood)(jedis) // 'Luke, Yoda'
 
 All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis`, and we want to retrieve a concatenated string of all the good guys' name. We first define an`isGood`function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called `concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
 
-## documentation
+## 📖 documentation
 
+* [why i'm building conductor](https://medium.com/@achille.urbain/why-im-building-conductor-fa780da821cd)
 * [introduction](https://conductor.js.org)
 * [core concepts](https://conductor.js.org/overview/core-concepts)
 * [API reference](https://conductor.js.org/api-reference/always)
