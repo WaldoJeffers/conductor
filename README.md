@@ -43,7 +43,9 @@ import { compose, get } from 'conductor'
 const character_id = 1
 const fetchCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
 const fetchPlanet = url => fetch(url).then(res => res.json())
-await compose(get('name'), fetchPlanet, get('homeworld'), fetchCharacter)(character_id) // Tatooine
+const getHomeworldName = compose(get('name'), fetchPlanet, get('homeworld'), fetchCharacter)
+
+await getHomeworldName(character_id) // Tatooine
 ```
 
 You can **compose** functions seamlessly, without ever wondering if you need to use `Promise.prototype.then` because one function returns a `Promise`. Simply add `await` before compose if one your functions is asynchronous.
@@ -65,7 +67,7 @@ const concat = join(', ')
 compose(concat, getName, isGood)(jedis) // 'Luke, Yoda'
 ```
 
-All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis`, and we want to retrieve a concatenated string of all the good guys' name. We first define an`isGood`function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called `concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
+All functions in **conductor** are **curried** by default, which means they can be used in a partially applied form to define very modular and composable blocks in your code. In the example above, we have an array of `jedis`, and we want to retrieve a concatenated string of all the good guys' name. We first define an `isGood` function, which will filter out the bad guys. Then, we create a mapping function`getName`which will retrieve each jedi's name. Finally, we create a concatenating function called `concat`. We can now easily compose them and pass the`jedis` array to the resulting function. Notice how we created small & modular **point-free** functions, and only passed the input data when we actually needed to.
 
 ## 📖 documentation
 
