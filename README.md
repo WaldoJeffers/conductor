@@ -68,7 +68,7 @@ All functions in **conductor** are **curried** by default, which means they can 
 ## 📖 documentation
 
 * [why i'm building conductor](https://medium.com/@achille.urbain/why-im-building-conductor-fa780da821cd)
-* [introduction](https://conductor.js.org)
+* [introduction](https://conductor.js.org/overview/introduction)
 * [core concepts](https://conductor.js.org/overview/core-concepts)
 * [API reference](https://conductor.js.org/api-reference/always)
 
