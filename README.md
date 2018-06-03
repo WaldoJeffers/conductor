@@ -1,4 +1,4 @@
-## ![conductor](https://user-images.githubusercontent.com/7644970/40887311-40bee9f6-6747-11e8-909b-35144015cee0.png)
+## ![conductor](https://user-images.githubusercontent.com/7644970/40887398-99dfcdc4-6748-11e8-8d86-bbd343741b81.png)
 
 [![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor)
 [![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor)
