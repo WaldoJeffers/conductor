@@ -72,7 +72,7 @@ All functions in **conductor** are **curried** by default, which means they can 
 * [core concepts](https://conductor.js.org/overview/core-concepts)
 * [API reference](https://conductor.js.org/api-reference/always)
 
-## influences
+## 🗿 influences
 
 * [Ramda](http://ramdajs.com/)
 * [Async](http://caolan.github.io/async/)

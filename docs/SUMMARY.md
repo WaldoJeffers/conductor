@@ -1,7 +1,5 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Overview
 
 * [Introduction](overview/introduction.md)
@@ -58,4 +56,3 @@
 
 * [example use cases](guides/example-use-cases.md)
 * [checkGuards](guides/checkguards.md)
-
