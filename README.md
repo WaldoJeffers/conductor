@@ -7,6 +7,8 @@
 
 **conductor** is a modern utility library to help you control the execution flow using functional programming.
 
+## 🤵 description
+
 It provides a set of utility functions which can be used both with _asynchronous_ and _synchronous_ code, allowing you to control your execution flow very clearly and with a minimum of code. The library is designed in a functional programming spirit, to provide a coherent API and highly composable functions. Think of it as if [Ramda](http://ramdajs.com/) & [Async](http://caolan.github.io/async/) had a baby.
 
 Read more on [Why I'm building conductor](https://medium.com/@achille.urbain/why-im-building-conductor-fa780da821cd).
