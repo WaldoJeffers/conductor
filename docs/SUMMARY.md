@@ -16,6 +16,7 @@
 * [branch](api-reference/branch.md)
 * [capitalize](api-reference/capitalize.md)
 * [compose](api-reference/compose.md)
+* [concat](api-reference/concat.md)
 * [curry](api-reference/curry.md)
 * [curryN](api-reference/curryn.md)
 * [delay](api-reference/delay.md)
@@ -59,5 +60,4 @@
 
 * [example use cases](guides/example-use-cases.md)
 * [checkGuards](guides/checkguards.md)
-* [concat](guides/concat.md)
 
