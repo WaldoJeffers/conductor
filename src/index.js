@@ -5,6 +5,7 @@ const arity = require('./arity')
 const branch = require('./branch')
 const capitalize = require('./capitalize')
 const compose = require('./compose')
+const concat = require('./concat')
 const curry = require('./curry')
 const curryN = require('./curryN')
 const delay = require('./delay')
@@ -49,6 +50,7 @@ module.exports = {
   branch,
   capitalize,
   compose,
+  concat,
   curry,
   curryN,
   delay,
