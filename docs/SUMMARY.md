@@ -24,6 +24,7 @@
 * [equals](api-reference/equals.md)
 * [filter](api-reference/filter.md)
 * [findIndex](api-reference/findindex.md)
+* [flatten](api-reference/flatten.md)
 * [flip](api-reference/flip.md)
 * [forEach](api-reference/foreach.md)
 * [get](api-reference/get.md)
@@ -58,5 +59,5 @@
 
 * [example use cases](guides/example-use-cases.md)
 * [checkGuards](guides/checkguards.md)
-* [flatten](guides/flatten.md)
+* [concat](guides/concat.md)
 
