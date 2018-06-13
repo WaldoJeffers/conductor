@@ -13,6 +13,7 @@ const entries = require('./entries')
 const equals = require('./equals')
 const filter = require('./filter')
 const findIndex = require('./findIndex')
+const flatten = require('./flatten')
 const flip = require('./flip')
 const forEach = require('./forEach')
 const get = require('./get')
@@ -56,6 +57,7 @@ module.exports = {
   equals,
   filter,
   findIndex,
+  flatten,
   flip,
   forEach,
   get,
