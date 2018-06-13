@@ -1,9 +1,8 @@
+# Introduction
+
 ## ![conductor](https://user-images.githubusercontent.com/7644970/40887398-99dfcdc4-6748-11e8-8d86-bbd343741b81.png)
 
-[![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor)
-[![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor)
-[![Codeship Status for WaldoJeffers/conductor](https://img.shields.io/codeship/da09eb70-22e7-0136-b547-4e8bca269d75.svg?style=flat-square)](https://app.codeship.com/projects/286044)
-[![codecov](https://img.shields.io/codecov/c/github/WaldoJeffers/conductor.svg?style=flat-square)](https://codecov.io/gh/WaldoJeffers/conductor)
+[![Conductor on npmjs](https://img.shields.io/npm/v/conductor.svg?style=flat-square)](https://www.npmjs.com/package/conductor) [![Conductor download stats on npmjs](https://img.shields.io/npm/dw/conductor.svg?style=flat-square)](https://npm-stat.com/charts.html?package=conductor) [![Codeship Status for WaldoJeffers/conductor](https://img.shields.io/codeship/da09eb70-22e7-0136-b547-4e8bca269d75.svg?style=flat-square)](https://app.codeship.com/projects/286044) [![codecov](https://img.shields.io/codecov/c/github/WaldoJeffers/conductor.svg?style=flat-square)](https://codecov.io/gh/WaldoJeffers/conductor)
 
 **conductor** is a modern utility library to help you control the execution flow using functional programming.
 
@@ -15,7 +14,7 @@ Read more on [Why I'm building conductor](https://medium.com/@achille.urbain/why
 
 ## 🔧 installation
 
-```
+```text
 npm install conductor
 ```
 
@@ -25,7 +24,7 @@ Here are a few examples of what you can do with **conductor**.
 
 ### use asynchronous functions seamlessly
 
-```js
+```javascript
 import { map } from 'conductor'
 
 const fetchCharacter = id => fetch(`https://swapi.co/api/people/${id}`).then(res => res.json())
@@ -37,7 +36,7 @@ You can use `map` with an asynchronous mapper and directly use the `await` keywo
 
 ### compose things
 
-```js
+```javascript
 import { compose, get } from 'conductor'
 
 const character_id = 1
@@ -52,7 +51,7 @@ You can **compose** functions seamlessly, without ever wondering if you need to 
 
 ### functional by design
 
-```js
+```javascript
 import { compose, equals, get, join, map, filter } from 'conductor'
 
 const jedis = [
@@ -81,3 +80,4 @@ All functions in **conductor** are **curried** by default, which means they can 
 * [Ramda](http://ramdajs.com/)
 * [Async](http://caolan.github.io/async/)
 * [RxJS](http://reactivex.io/rxjs/)
+

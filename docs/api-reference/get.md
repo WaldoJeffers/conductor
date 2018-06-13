@@ -1,7 +1,3 @@
----
-description: Get a collection's item by its key
----
-
 # get
 
 ```erlang

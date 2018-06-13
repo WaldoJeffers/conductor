@@ -8,11 +8,11 @@ description: Check if two items are equal
 equals :: (Any a, Any b) => Boolean result
 ```
 
-### description
+## description
 
 Checks if two items are equal.
 
-### example
+## example
 
 ```javascript
 import { equals } from 'conductor'
@@ -20,3 +20,4 @@ import { equals } from 'conductor'
 equals(1, 1) // true
 equals(1, 2) // false
 ```
+

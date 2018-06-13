@@ -62,4 +62,5 @@ const predicate = id => getCharacter(id).then(character => character.name === 'R
 await findIndex(predicate, character_ids) // 1
 ```
 
-Here, we have an asynchronous predicate which takes a character_id and checks if the character is R2-D2, using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
+Here, we have an asynchronous predicate which takes a character\_id and checks if the character is R2-D2, using the [Star Wars API](https://swapi.co/). Since the predicate is asynchronous, we need to use `await` because the result is a `Promise`. Luckily, we found the droid we were looking for 😎.
+

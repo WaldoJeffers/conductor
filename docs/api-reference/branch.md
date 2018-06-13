@@ -1,5 +1,5 @@
 ---
-description: Run several functions in parallel
+description: Execute functions in parallel
 ---
 
 # branch

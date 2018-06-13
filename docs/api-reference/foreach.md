@@ -40,3 +40,4 @@ forEach(numbers, log)
 // 1
 // 4
 ```
+

@@ -23,3 +23,4 @@ always2() // 2
 always2(8) // 2
 always2(null) // 2
 ```
+

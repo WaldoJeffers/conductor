@@ -27,3 +27,4 @@ words.forEach(arity(1, console.log))
 // 'hello'
 // 'world'
 ```
+
