@@ -6,6 +6,8 @@ const promiseFn = () => Promise.resolve()
 
 describe('type', () => {
   it('should return the input\'s type', () => {
+    expect(type(null)).toBe('null')
+    expect(type(undefined)).toBe('undefined')
     expect(type('hello')).toBe('string')
     expect(type(true)).toBe('boolean')
     expect(type(2)).toBe('number')
