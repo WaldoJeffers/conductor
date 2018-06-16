@@ -31,6 +31,7 @@ const next = require('./next')
 const not = require('./not')
 const pluck = require('./pluck')
 const prepend = require('./prepend')
+const random = require('./random')
 const reduce = require('./reduce')
 const replace = require('./replace')
 const slice = require('./slice')
@@ -76,6 +77,7 @@ module.exports = {
   not,
   pluck,
   prepend,
+  random,
   reduce,
   replace,
   slice,
