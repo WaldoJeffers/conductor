@@ -20,3 +20,4 @@ import { capitalize } from 'conductor'
 capitalize('hello') // 'Hello'
 capitalize('hello world') // 'Hello world'
 ```
+

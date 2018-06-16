@@ -1,5 +1,5 @@
 ---
-description: Insert or update an item in an array
+description: Insert or updates an item in an array
 ---
 
 # upsert

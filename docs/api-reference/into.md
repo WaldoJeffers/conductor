@@ -61,3 +61,4 @@ into([], transformer, input) // [4]
 ```
 
 Here our transformer function doubles every even value and discards every odd value. To double the value, we pass the updated value to the reducer alongside with the reducer. To discard it, we simply simply return the accumulator as is.
+

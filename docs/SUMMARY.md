@@ -1,5 +1,7 @@
 # Table of contents
 
+* [Introduction](../README.md)
+
 ## Overview
 
 * [Introduction](overview/introduction.md)
@@ -14,6 +16,7 @@
 * [branch](api-reference/branch.md)
 * [capitalize](api-reference/capitalize.md)
 * [compose](api-reference/compose.md)
+* [concat](api-reference/concat.md)
 * [curry](api-reference/curry.md)
 * [curryN](api-reference/curryn.md)
 * [delay](api-reference/delay.md)
@@ -22,6 +25,7 @@
 * [equals](api-reference/equals.md)
 * [filter](api-reference/filter.md)
 * [findIndex](api-reference/findindex.md)
+* [flatten](api-reference/flatten.md)
 * [flip](api-reference/flip.md)
 * [forEach](api-reference/foreach.md)
 * [get](api-reference/get.md)
@@ -56,3 +60,4 @@
 
 * [example use cases](guides/example-use-cases.md)
 * [checkGuards](guides/checkguards.md)
+

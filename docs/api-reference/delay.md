@@ -1,7 +1,3 @@
----
-description: Delay a value
----
-
 # delay
 
 ```erlang

@@ -21,3 +21,4 @@ import { map } from 'conductor/transformers'
 const times2 = x => 2 * x
 dump(map(times2), [3, 1, 4]) // [6, 2, 8]
 ```
+
