@@ -35,6 +35,7 @@
 * [into](api-reference/into.md)
 * [isPromise](api-reference/ispromise.md)
 * [iterate](api-reference/iterate.md)
+* [join](api-reference/join.md)
 * [keys](api-reference/keys.md)
 * [map](api-reference/map.md)
 * [next](api-reference/next.md)
