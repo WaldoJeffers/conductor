@@ -1,5 +1,5 @@
 ---
-description: Get the first item in a collection
+description: Get the first element of a collection
 ---
 
 # head

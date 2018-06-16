@@ -1,5 +1,5 @@
 ---
-description: Filter a collection
+description: Filter items in a collection
 ---
 
 # filter
