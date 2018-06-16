@@ -19,6 +19,6 @@ describe('join', () => {
   })
 
   it('should concat a map\'s values using the separator', () => {
-    expect(join(', ', object)).toBe('Bonsoir, Elliot')
+    expect(join(', ', map)).toBe('Bonsoir, Elliot')
   })
 })
