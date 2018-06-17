@@ -12,6 +12,7 @@ const delay = require('./delay')
 const dump = require('./dump')
 const entries = require('./entries')
 const equals = require('./equals')
+const factory = require('./factory')
 const filter = require('./filter')
 const findIndex = require('./findIndex')
 const flatten = require('./flatten')
@@ -58,6 +59,7 @@ module.exports = {
   dump,
   entries,
   equals,
+  factory,
   filter,
   findIndex,
   flatten,
