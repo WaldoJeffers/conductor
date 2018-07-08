@@ -17,6 +17,8 @@ describe('type', () => {
     expect(type(new Map())).toBe('map')
     expect(type(new Set())).toBe('set')
     expect(type(() => {})).toBe('function')
+    expect(type(asyncFn)).toBe('function')
+    expect(type(promiseFn)).toBe('function')
     expect(type(new Person())).toBe('person')
     expect(type(asyncFn())).toBe('promise')
     expect(type(promiseFn())).toBe('promise')

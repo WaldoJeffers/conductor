@@ -4,8 +4,12 @@ const type = value => {
     return 'null'
   case undefined:
     return 'undefined'
-  default:
-    return value.constructor.name.toLowerCase()
+  default: {
+    const constructor_name = value.constructor.name.toLowerCase()
+    return constructor_name === 'asyncfunction'
+      ? 'function'
+      : constructor_name
+  }
   }
 }
 
