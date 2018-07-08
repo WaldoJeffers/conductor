@@ -52,4 +52,10 @@ describe('factory', () => {
       name: 'Elliot',
     })
   })
+
+  it('should work with async functions', async () => {
+    const spec = { id: async () => 2, createdAt: () => 1256 }
+    const fact = factory(spec)
+    expect(fact()).resolves.toEqual({ id: 2, createdAt: 1256 })
+  })
 })
