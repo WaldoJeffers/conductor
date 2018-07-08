@@ -1,5 +1,5 @@
 ---
-description: Return a constant value
+description: Constant combinator
 ---
 
 # always

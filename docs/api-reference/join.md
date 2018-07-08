@@ -1,7 +1,3 @@
----
-description: Join a collection's values
----
-
 # join
 
 ```erlang
