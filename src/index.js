@@ -36,6 +36,7 @@ const random = require('./random')
 const reduce = require('./reduce')
 const replace = require('./replace')
 const slice = require('./slice')
+const split = require('./split')
 const some = require('./some')
 const then = require('./then')
 const toLowerCase = require('./toLowerCase')
@@ -84,6 +85,7 @@ module.exports = {
   replace,
   slice,
   some,
+  split,
   then,
   toLowerCase,
   transduce,
