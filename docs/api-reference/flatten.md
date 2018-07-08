@@ -1,7 +1,3 @@
----
-description: Deeply flatten a collection
----
-
 # flatten
 
 ```erlang

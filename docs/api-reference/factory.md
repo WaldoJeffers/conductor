@@ -8,16 +8,16 @@ description: Create a factory function
 flatten :: Object specification => (Any, Any, ...) -> Object
 ```
 
-### description
+## description
 
 Create a factory function using the provided specification object. The `factory` method has 2 magical powers:
 
-- the specification object can contain constant values, but also functions which will be called everytime the factory function is called (arguments will be passed as-is)
-- the specification object can be nested: `factory` works recursively.
+* the specification object can contain constant values, but also functions which will be called everytime the factory function is called \(arguments will be passed as-is\)
+* the specification object can be nested: `factory` works recursively.
 
-### examples
+## examples
 
-#### constant values
+### constant values
 
 ```javascript
 import { factory } from 'conductor'
@@ -27,7 +27,7 @@ const Hacker = factory(spec)
 Hacker() // { name: 'Elliot', type: 'hacker' }
 ```
 
-#### function values
+### function values
 
 ```javascript
 import { factory } from 'conductor'
@@ -37,7 +37,7 @@ const Hacker = factory(spec)
 Hacker('Elliot') // { name: 'Elliot', createdAt: 1529249582304 }
 ```
 
-#### nested specification
+### nested specification
 
 ```javascript
 import { factory } from 'conductor'
@@ -60,3 +60,4 @@ Hacker('Elliot')
 //   }
 // }
 ```
+

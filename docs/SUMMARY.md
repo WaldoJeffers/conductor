@@ -48,6 +48,7 @@
 * [replace](api-reference/replace.md)
 * [slice](api-reference/slice.md)
 * [some](api-reference/some.md)
+* [split](api-reference/split.md)
 * [then](api-reference/then.md)
 * [toLowerCase](api-reference/tolowercase.md)
 * [transduce](api-reference/transduce.md)

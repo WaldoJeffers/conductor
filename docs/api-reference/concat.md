@@ -1,7 +1,3 @@
----
-description: Concatenate two elements
----
-
 # concat
 
 ```erlang

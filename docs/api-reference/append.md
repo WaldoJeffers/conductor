@@ -1,7 +1,3 @@
----
-description: Add an item at the end of an array
----
-
 # append
 
 ```erlang
