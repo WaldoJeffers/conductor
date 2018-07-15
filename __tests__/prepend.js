@@ -5,6 +5,12 @@ describe('prepend', () => {
     expect(prepend('hello', ['world'])).toEqual(['hello', 'world'])
   })
 
+  it('should add an element at the beginning of a set', () => {
+    expect(prepend('hello', new Set(['world']))).toEqual(
+      new Set(['hello', 'world'])
+    )
+  })
+
   it('should be a pure function', () => {
     const input = ['world']
     const output = prepend('hello', input)
