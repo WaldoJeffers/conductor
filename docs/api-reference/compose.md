@@ -44,7 +44,7 @@ Even if `multiply` and `minus3` do not accept the same number of arguments, `com
 import {compose} from '@waldojeffers/conductor'
 
 const times2 = x => 2 * x
-const minus3 = x => 3 * x
+const minus3 = x => x - 3
 const times2Async = async x => times2(x) // async keyword makes it return a Promise
 const minus3Async = async x => minus3(x) // async keyword makes it return a Promise
 

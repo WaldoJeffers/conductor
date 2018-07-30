@@ -1,7 +1,3 @@
----
-description: Split a string into an array
----
-
 # split
 
 ```erlang
