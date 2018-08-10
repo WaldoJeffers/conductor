@@ -32,6 +32,24 @@ describe('equals', () => {
     expect(equals(new Set([1, [2, 3]]), new Set([[2, 3, 4], 1]))).toBe(false)
   })
 
+  it('should check if two objects are equal', () => {
+    expect(equals({ hello: 'world' }, { hello: 'world' })).toBe(true)
+    expect(equals({ hello: 'world' }, { hello: 'monde' })).toBe(false)
+
+    expect(
+      equals(
+        { hello: 'world', bonjour: 'monde' },
+        { bonjour: 'monde', hello: 'world' }
+      )
+    ).toBe(true)
+    expect(
+      equals(
+        { hello: 'world', bonjour: 'monde' },
+        { bonjour: 'monde', hello: 'world', hola: 'mundo' }
+      )
+    ).toBe(false)
+  })
+
   it('should check if two maps are equal', () => {
     expect(
       equals(new Map([['hello', 'world']]), new Map([['hello', 'world']]))
@@ -48,8 +66,5 @@ describe('equals', () => {
         new Map([['hello', 'world'], ['bonjour', 'monde']])
       )
     ).toBe(false)
-
-    expect(equals(new Set([1, [2, 3]]), new Set([[2, 3], 1]))).toBe(true)
-    expect(equals(new Set([1, [2, 3]]), new Set([[2, 3, 4], 1]))).toBe(false)
   })
 })

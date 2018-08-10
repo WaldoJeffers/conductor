@@ -21,8 +21,16 @@ const equals = (a, b) => {
               [...b].some(value_b => equals(value_a, value_b))
             )
         )
+      case 'map':
+        return (
+          a.size === b.size &&
+            [...a.keys()].every(key => equals(a.get(key), b.get(key)))
+        )
       case 'object':
-        return Object.keys(a).every(key => equals(a[key], b[key]))
+        return (
+          Object.keys(a).length === Object.keys(b).length &&
+            Object.keys(a).every(key => equals(a[key], b[key]))
+        )
       case 'date':
         return a.getTime() === b.getTime()
       default:
