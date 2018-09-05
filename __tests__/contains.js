@@ -1,6 +1,11 @@
 const contains = require('../src/contains')
 
 describe('contains', () => {
+  it('should check if an string contains a substring', () => {
+    expect(contains('wor', 'world')).toBe(true)
+    expect(contains('hello', 'world')).toBe(false)
+  })
+
   it('should check if an array contains the provided primitive value', () => {
     expect(contains('world', ['hello', 'world'])).toBe(true)
     expect(contains('monde', ['hello', 'world'])).toBe(false)
