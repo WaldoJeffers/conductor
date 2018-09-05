@@ -1,24 +1,7 @@
-# changelog
+<a name="1.3.1"></a>
 
-## v1.1.1
+## [1.3.1](https://github.com/WaldoJeffers/conductor/compare/1.3.0...1.3.1) (2018-09-05)
 
-### new features
-- Add a [factory](https://conductor.js.org/api-reference/factory) method
+### Bug Fixes
 
-### bugfixes
-- Fix [`type`](https://conductor.js.org/api-reference/type)'s results for `async` functions: it (incorrectly?) returned `asyncfunction` instead of `function`.
-
-### internals
-- Add a `.prettierignore` file
-
-## v1.1.0
-
-### new features
-
-- Add a [flatten](https://conductor.js.org/api-reference/flatten) method
-- Add a [join](https://conductor.js.org/api-reference/join) method
-
-### bugfixes
-
-- Correctly export `random`. Thanks @Haegin!
-- Fix minor documentation issues
+- **contains:** fix `contains` for strings ([5fa51cb](https://github.com/WaldoJeffers/conductor/commit/5fa51cb))
