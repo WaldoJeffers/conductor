@@ -17,6 +17,7 @@ describe('reduce', () => {
   })
 
   it('should work with a reducer returning both awaitable & non-awaitable values', async () => {
-    await expect(reduce(addWithRandomDelay(1), 0, numbers)).resolves.toBe(14)
+    const output = await reduce(addWithRandomDelay(1), 0, numbers)
+    expect(output).toBe(14)
   })
 })
