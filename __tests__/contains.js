@@ -42,4 +42,14 @@ describe('contains', () => {
       )
     ).toBe(true)
   })
+
+  it('should check if an object contains a primitive', () => {
+    expect(contains('world', { hello: 'world' })).toBe(true)
+    expect(contains('monde', { hello: 'world' })).toBe(false)
+  })
+
+  it('should check if an object contains an array', () => {
+    expect(contains(['hello'], { words: ['hello'] })).toBe(true)
+    expect(contains(['world'], { words: ['hello'] })).toBe(false)
+  })
 })
