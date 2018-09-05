@@ -39,6 +39,7 @@
 * [join](api-reference/join.md)
 * [keys](api-reference/keys.md)
 * [map](api-reference/map.md)
+* [merge](api-reference/merge.md)
 * [next](api-reference/next.md)
 * [not](api-reference/not.md)
 * [pluck](api-reference/pluck.md)
