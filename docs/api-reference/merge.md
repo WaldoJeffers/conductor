@@ -1,7 +1,3 @@
----
-description: Merge two items
----
-
 # merge
 
 ```erlang
