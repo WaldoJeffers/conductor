@@ -1,9 +1,10 @@
 const curry = require('./curry')
 const type = require('./type')
+const equals = require('./equals')
 
-const equalsBy = (predicate, a, b) =>
-  type(predicate) === 'string'
-    ? a[predicate] === b[predicate]
-    : predicate(a) === predicate(b)
+const equalsBy = (getter, a, b) =>
+  type(getter) === 'string'
+    ? equals(a[getter], b[getter])
+    : equals(getter(a), getter(b))
 
 module.exports = curry(equalsBy)
