@@ -41,6 +41,7 @@
 * [keys](api-reference/keys.md)
 * [map](api-reference/map.md)
 * [merge](api-reference/merge.md)
+* [mergeBy](api-reference/mergeby.md)
 * [next](api-reference/next.md)
 * [not](api-reference/not.md)
 * [pluck](api-reference/pluck.md)
@@ -60,7 +61,6 @@
 * [type](api-reference/type.md)
 * [upsert](api-reference/upsert.md)
 * [values](api-reference/values.md)
-* [mergeBy](api-reference/mergeby.md)
 
 ## Guides
 
