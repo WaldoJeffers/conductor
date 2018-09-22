@@ -60,6 +60,7 @@
 * [type](api-reference/type.md)
 * [upsert](api-reference/upsert.md)
 * [values](api-reference/values.md)
+* [mergeBy](api-reference/mergeby.md)
 
 ## Guides
 
