@@ -1,14 +1,14 @@
----
-description: Check if two items are equal by the same token
----
-
 # equalsBy
 
-```haskell
-equalsBy :: (Function | String getter, Any item1, Any item2) => Boolean
-```
+{% hint style="info" %}
+Available since v1.4.0
+{% endhint %}
 
 ### description
+
+```erlang
+equalsBy :: (Function | String getter, Any item1, Any item2) => Boolean
+```
 
 Returns `true` if the values returned by the getter are equals on both items. The `getter` can be provided as a `Function` or a `String`. If `getter` is a Function, then `equalsBy` will retrieve the comparison value from both items using the provided function. If it is a `String`, then `equalsBy` will use it as a key and retrieve the value associated to this key on both items. `equalsBy` uses [`equals`](equals.md) internally to compare the two values returned by `getter`.
 

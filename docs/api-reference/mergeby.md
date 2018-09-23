@@ -1,8 +1,8 @@
----
-description: Merge two collections using the provided key
----
-
 # mergeBy
+
+{% hint style="info" %}
+Available since v1.4.0
+{% endhint %}
 
 ### description
 
