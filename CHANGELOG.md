@@ -1,3 +1,13 @@
+<a name="1.4.1"></a>
+## [1.4.1](https://github.com/WaldoJeffers/conductor/compare/1.4.0...1.4.1) (2018-09-27)
+
+
+### Bug Fixes
+
+* Forward extra arguments to arity's inner parameter function ([535ca77](https://github.com/WaldoJeffers/conductor/commit/535ca77))
+
+
+
 <a name="1.4.0"></a>
 
 # [1.4.0](https://github.com/WaldoJeffers/conductor/compare/1.3.1...1.4.0) (2018-09-22)
