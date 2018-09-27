@@ -7,7 +7,7 @@ describe('arity', () => {
     expect(arity(2, add).length).toBe(2)
   })
 
-  it('should not pass more arguments than the provided arity', () => {
-    expect(arity(2, add)(1, 2, 3)).toBe(3)
+  it('should forward all arguments it receives', () => {
+    expect(arity(2, add)(1, 2, 3)).toBe(6)
   })
 })
