@@ -52,6 +52,7 @@
 * [slice](api-reference/slice.md)
 * [some](api-reference/some.md)
 * [split](api-reference/split.md)
+* [take](api-reference/take.md)
 * [then](api-reference/then.md)
 * [toLowerCase](api-reference/tolowercase.md)
 * [transduce](api-reference/transduce.md)
@@ -66,4 +67,3 @@
 
 * [example use cases](guides/example-use-cases.md)
 * [checkGuards](guides/checkguards.md)
-
