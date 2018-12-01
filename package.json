@@ -1,6 +1,6 @@
 {
   "name": "conductor",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "main": "src/index.js",
   "module": "src/index.js",
   "scripts": {
