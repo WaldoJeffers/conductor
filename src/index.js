@@ -1,4 +1,5 @@
 const always = require('./always')
+const and = require('./and')
 const append = require('./append')
 const apply = require('./apply')
 const arity = require('./arity')
@@ -34,6 +35,7 @@ const merge = require('./merge')
 const mergeBy = require('./mergeBy')
 const next = require('./next')
 const not = require('./not')
+const or = require('./or')
 const pluck = require('./pluck')
 const prepend = require('./prepend')
 const random = require('./random')
@@ -52,6 +54,7 @@ const values = require('./values')
 
 module.exports = {
   always,
+  and,
   append,
   apply,
   arity,
@@ -87,6 +90,7 @@ module.exports = {
   mergeBy,
   next,
   not,
+  or,
   pluck,
   prepend,
   random,
