@@ -11,7 +11,7 @@ const set = new Set(numbers)
 const isEven = number => number % 2 === 0
 const isEvenAsync = async number => isEven(number)
 const isGreaterThan7 = number => number > 7
-const isGreaterThan7Async = number => isGreaterThan7(number)
+const isGreaterThan7Async = async number => isGreaterThan7(number)
 
 describe('every', () => {
   it('should return true if every item in the input collection satisfies the predicate', () => {

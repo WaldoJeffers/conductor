@@ -27,6 +27,12 @@ describe('equals', () => {
     expect(equals(new Set([1, 2]), new Set([1, 2]))).toBe(true)
     expect(equals(new Set([1, 2]), new Set([2, 1]))).toBe(true)
     expect(equals(new Set([1, 2]), new Set([1, 2, 3]))).toBe(false)
+    expect(
+      equals(
+        new Set([{ a: 1 }, { a: 1 }, { b: 2 }]),
+        new Set([{ a: 1 }, { b: 2 }, { b: 2 }])
+      )
+    ).toBe(false)
 
     expect(equals(new Set([1, [2, 3]]), new Set([[2, 3], 1]))).toBe(true)
     expect(equals(new Set([1, [2, 3]]), new Set([[2, 3, 4], 1]))).toBe(false)

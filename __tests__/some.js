@@ -11,7 +11,7 @@ const set = new Set(numbers)
 const isEven = number => number % 2 === 0
 const isEvenAsync = async number => isEven(number)
 const isGreaterThan5 = number => number > 5
-const isGreaterThan5Async = number => isGreaterThan5(number)
+const isGreaterThan5Async = async number => isGreaterThan5(number)
 
 describe('some', () => {
   it('should return true is at least one item in the input collection satisfies the predicate', () => {
