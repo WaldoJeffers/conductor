@@ -24,6 +24,7 @@
 * [entries](api-reference/entries.md)
 * [equals](api-reference/equals.md)
 * [equalsBy](api-reference/equalsby.md)
+* [every](api-reference/every.md)
 * [factory](api-reference/factory.md)
 * [filter](api-reference/filter.md)
 * [findIndex](api-reference/findindex.md)

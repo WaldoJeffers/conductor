@@ -1,5 +1,7 @@
 const curry = require('./curry')
 const type = require('./type')
+const every = require('./every')
+const some = require('./some')
 
 const equals = (a, b) => {
   if (a === b) {
@@ -12,24 +14,35 @@ const equals = (a, b) => {
       case 'array':
         return (
           a.length === b.length &&
-            a.every((value, index) => equals(value, b[index]))
+            every((value, index) => equals(value, b[index]), a)
         )
-      case 'set':
-        return (
-          a.size === b.size &&
-            [...a].every(value_a =>
-              [...b].some(value_b => equals(value_a, value_b))
-            )
-        )
+      case 'set': {
+        if (a.size !== b.size) return false
+
+        const b_copy = new Set([...b])
+
+        return every(
+          value_a =>
+            some(value_b => {
+              const found = equals(value_a, value_b)
+
+              if (found) {
+                b_copy.delete(value_b)
+              }
+
+              return found
+            }, b_copy),
+          a)
+      }
       case 'map':
         return (
           a.size === b.size &&
-            [...a.keys()].every(key => equals(a.get(key), b.get(key)))
+            every(key => equals(a.get(key), b.get(key)), a.keys())
         )
       case 'object':
         return (
           Object.keys(a).length === Object.keys(b).length &&
-            Object.keys(a).every(key => equals(a[key], b[key]))
+            every(key => equals(a[key], b[key]), Object.keys(a))
         )
       case 'date':
         return a.getTime() === b.getTime()
