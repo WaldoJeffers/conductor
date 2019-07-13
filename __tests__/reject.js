@@ -3,10 +3,15 @@ const delay = require('../src/delay')
 const random = require('../src/random')
 
 const isEven = nb => nb % 2 === 0
+const isKeyEqualToDrumsticks = (_, key) => key === 'drumsticks'
+const isKeyEqualToDrumsticksAsync = (...args) =>
+  Promise.resolve(isKeyEqualToDrumsticks(...args))
+const isKeyEqualToDrumsticksRandomSync = (_, key) =>
+  key === 'drumsticks' ? Promise.resolve(true) : false
 const isKeyEven = (_, key) => isEven(key)
 const isEvenAsync = nb => Promise.resolve(isEven(nb))
 const isKeyEvenAsync = (_, key) => isEvenAsync(key)
-const isEvenRandomSync = nb => (nb % 2 === 0 ? Promise.resolve(true) : false)
+const isEvenRandomSync = nb => (isEven(nb) ? Promise.resolve(true) : false)
 const isKeyEvenRandomSync = (_, key) => isEvenRandomSync(key)
 const rejectWithRandomDelay = nb => delay(random(100, 1000))(nb).then(isEven)
 
@@ -29,9 +34,9 @@ describe('reject', () => {
 
   it('should reject items in collection using a synchronous predicate function on the key', () => {
     expect(reject(isKeyEven, array)).toEqual(newArray)
-    expect(reject(isKeyEven, object)).toEqual(newObject)
-    expect(reject(isKeyEven, map)).toEqual(newMap)
     expect(reject(isKeyEven, set)).toEqual(newSet)
+    expect(reject(isKeyEqualToDrumsticks, object)).toEqual(newObject)
+    expect(reject(isKeyEqualToDrumsticks, map)).toEqual(newMap)
   })
 
   it('should reject values in a collection using an asynchronous predicate function', async () => {
@@ -43,9 +48,13 @@ describe('reject', () => {
 
   it('should reject values in a collection using an asynchronous predicate function on the key', async () => {
     await expect(reject(isKeyEvenAsync, array)).resolves.toEqual(newArray)
-    await expect(reject(isKeyEvenAsync, object)).resolves.toEqual(newObject)
     await expect(reject(isKeyEvenAsync, set)).resolves.toEqual(newSet)
-    await expect(reject(isKeyEvenAsync, map)).resolves.toEqual(newMap)
+    await expect(reject(isKeyEqualToDrumsticksAsync, map)).resolves.toEqual(
+      newMap
+    )
+    await expect(reject(isKeyEqualToDrumsticksAsync, object)).resolves.toEqual(
+      newObject
+    )
   })
 
   it('should reject values in a collection using a predicate function which is sometimes synchronous and sometimes asynchronous', async () => {
@@ -57,11 +66,13 @@ describe('reject', () => {
 
   it('should reject values in a collection using a predicate function on the key which is sometimes synchronous and sometimes asynchronous', async () => {
     await expect(reject(isKeyEvenRandomSync, array)).resolves.toEqual(newArray)
-    await expect(reject(isKeyEvenRandomSync, object)).resolves.toEqual(
-      newObject
-    )
     await expect(reject(isKeyEvenRandomSync, set)).resolves.toEqual(newSet)
-    await expect(reject(isKeyEvenRandomSync, map)).resolves.toEqual(newMap)
+    await expect(
+      reject(isKeyEqualToDrumsticksRandomSync, object)
+    ).resolves.toEqual(newObject)
+    await expect(
+      reject(isKeyEqualToDrumsticksRandomSync, map)
+    ).resolves.toEqual(newMap)
   })
 
   it('should reject values in a collection and keep the same order', async () => {

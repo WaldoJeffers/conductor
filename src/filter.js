@@ -5,7 +5,7 @@ const getSeed = require('./internal/getSeed')
 const reduce = require('./reduce')
 const compose = require('./compose')
 const map = require('./map')
-const values = require('./values')
+const entries = require('./entries')
 const iterate = require('./iterate')
 const flip = require('./flip')
 
@@ -22,10 +22,10 @@ const filter = (predicate, collection) =>
   compose(
     flip(filterSync)(collection),
     iterate,
-    map(predicate),
-    // retrieve values as an array, otherwise mapping predicates will fail on sets
+    map(([key, value]) => predicate(value, key, collection)),
+    // retrieve entries as an array, otherwise mapping predicates will fail on sets
     // (it will only contain 2 values, true & false)
-    values
+    entries
   )(collection)
 
 module.exports = curry(filter)
