@@ -23,6 +23,7 @@ const flatten = require('./flatten')
 const flip = require('./flip')
 const forEach = require('./forEach')
 const get = require('./get')
+const has = require('./has')
 const head = require('./head')
 const identity = require('./identity')
 const ifElse = require('./ifElse')
@@ -79,6 +80,7 @@ module.exports = {
   flip,
   forEach,
   get,
+  has,
   head,
   identity,
   ifElse,
