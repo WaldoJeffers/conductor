@@ -9,6 +9,7 @@ const compose = require('./compose')
 const concat = require('./concat')
 const curry = require('./curry')
 const curryN = require('./curryN')
+const del = require('./del')
 const delay = require('./delay')
 const dump = require('./dump')
 const entries = require('./entries')
@@ -63,6 +64,7 @@ module.exports = {
   concat,
   curry,
   curryN,
+  del,
   delay,
   dump,
   entries,
