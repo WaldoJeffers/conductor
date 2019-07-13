@@ -40,6 +40,7 @@ const pluck = require('./pluck')
 const prepend = require('./prepend')
 const random = require('./random')
 const reduce = require('./reduce')
+const reject = require('./reject')
 const replace = require('./replace')
 const slice = require('./slice')
 const split = require('./split')
@@ -95,6 +96,7 @@ module.exports = {
   prepend,
   random,
   reduce,
+  reject,
   replace,
   slice,
   some,
