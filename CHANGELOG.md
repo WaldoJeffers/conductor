@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/WaldoJeffers/conductor/compare/1.6.2...1.7.0) (2019-07-13)
+
+
+### Features
+
+* Add a has method ([da52e3e](https://github.com/WaldoJeffers/conductor/commit/da52e3e))
+
 ## [1.6.2](https://github.com/WaldoJeffers/conductor/compare/1.6.1...1.6.2) (2019-07-13)
 
 
