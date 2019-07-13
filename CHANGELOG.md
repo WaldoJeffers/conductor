@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/WaldoJeffers/conductor/compare/1.6.1...1.6.2) (2019-07-13)
+
+
+### Bug Fixes
+
+* Fix filter implementation ([f064716](https://github.com/WaldoJeffers/conductor/commit/f064716))
+
 ## [1.6.1](https://github.com/WaldoJeffers/conductor/compare/1.6.0...1.6.1) (2019-07-13)
 
 
