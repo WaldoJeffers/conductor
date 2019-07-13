@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/WaldoJeffers/conductor/compare/1.6.0...1.6.1) (2019-07-13)
+
+
+### Bug Fixes
+
+* Fix every implementation ([f728ab8](https://github.com/WaldoJeffers/conductor/commit/f728ab8))
+
 <a name="1.5.0"></a>
 # [1.5.0](https://github.com/WaldoJeffers/conductor/compare/1.4.1...1.5.0) (2018-12-01)
 
