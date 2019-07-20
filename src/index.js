@@ -32,6 +32,7 @@ const into = require('./into')
 const isPromise = require('./isPromise')
 const iterate = require('./iterate')
 const keys = require('./keys')
+const length = require('./length')
 const map = require('./map')
 const merge = require('./merge')
 const mergeBy = require('./mergeBy')
@@ -89,6 +90,7 @@ module.exports = {
   iterate,
   join,
   keys,
+  length,
   map,
   merge,
   mergeBy,
