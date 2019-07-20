@@ -4,6 +4,7 @@ const values = collection => {
   switch (type(collection)) {
   case 'array':
     return collection
+  case 'string':
   case 'object':
     return Object.values(collection)
   case 'set':
