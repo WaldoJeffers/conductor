@@ -1,3 +1,18 @@
+# [1.8.0](https://github.com/WaldoJeffers/conductor/compare/1.7.1...1.8.0) (2019-07-20)
+
+
+### Bug Fixes
+
+* Make slice compatible with all types of collections ([2e4b892](https://github.com/WaldoJeffers/conductor/commit/2e4b892))
+* Provide a numerical index as the fifth argument of reduce ([906230e](https://github.com/WaldoJeffers/conductor/commit/906230e))
+* **values:** Fix values for strings ([a740cdd](https://github.com/WaldoJeffers/conductor/commit/a740cdd))
+
+
+### Features
+
+* Introduce a new `length` function ([4cd22a5](https://github.com/WaldoJeffers/conductor/commit/4cd22a5))
+* **last:** Introduce new `last` function ([bf361f3](https://github.com/WaldoJeffers/conductor/commit/bf361f3))
+
 ## [1.7.1](https://github.com/WaldoJeffers/conductor/compare/1.7.0...1.7.1) (2019-07-13)
 
 # [1.7.0](https://github.com/WaldoJeffers/conductor/compare/1.6.2...1.7.0) (2019-07-13)
