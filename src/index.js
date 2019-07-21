@@ -27,6 +27,7 @@ const has = require('./has')
 const head = require('./head')
 const identity = require('./identity')
 const ifElse = require('./ifElse')
+const isBetween = require('./isBetween')
 const join = require('./join')
 const into = require('./into')
 const isPromise = require('./isPromise')
@@ -87,6 +88,7 @@ module.exports = {
   identity,
   ifElse,
   into,
+  isBetween,
   isPromise,
   iterate,
   join,
