@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/WaldoJeffers/conductor/compare/1.8.0...1.9.0) (2019-07-21)
+
+
+### Features
+
+* **isBetween:** Introduce new function ([33cfa0e](https://github.com/WaldoJeffers/conductor/commit/33cfa0e))
+
 # [1.8.0](https://github.com/WaldoJeffers/conductor/compare/1.7.1...1.8.0) (2019-07-20)
 
 
